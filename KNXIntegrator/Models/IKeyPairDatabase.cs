@@ -1,4 +1,4 @@
-namespace Models;
+namespace KNXIntegrator.Models;
 
 public interface IKeyPairDatabase{
 

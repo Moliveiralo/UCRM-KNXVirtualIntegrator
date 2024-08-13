@@ -1,14 +1,14 @@
 using System.Xml.Linq;
 
-namespace Models;
+namespace KNXIntegrator.Models;
 
 
 
-public class FunctionnalModelMapper{
+public class FunctionalModelMapper{
 
     private IKeyPairDatabase _keyPairDatabase = new KeyPairDatabase();
-    private IGrpAddrDictionnary _grpAddrDict = new GrpAddrDictionnary();
-    private ICmdAndStateMappingFunctionDictionnary _funDict = new CmdAndStateMappingFunctionDictionnary();
+    private IGrpAddrDictionary _grpAddrDict = new GrpAddrDictionary();
+    private FunctionalModelDictionary _funDict = new FunctionalModelDictionary();
 
 
 

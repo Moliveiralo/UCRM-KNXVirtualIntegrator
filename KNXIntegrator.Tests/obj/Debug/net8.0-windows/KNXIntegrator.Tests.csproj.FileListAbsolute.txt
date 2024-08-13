@@ -1,0 +1,8 @@
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\.msCoverageSourceRootsMapping_KNXIntegrator.Tests
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\CoverletSourceRootsMapping_KNXIntegrator.Tests
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.csproj.AssemblyReference.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.AssemblyInfoInputs.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.AssemblyInfo.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.csproj.CoreCompileInputs.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator.Tests\obj\Debug\net8.0-windows\KNXIntegrator.Tests.sourcelink.json

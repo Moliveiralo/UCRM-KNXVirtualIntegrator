@@ -1,10 +1,10 @@
-using models;
 
-namespace Models;
+
+namespace KNXIntegrator.Models;
 
 public class KeyPairDatabase:IKeyPairDatabase{
 
-    private List<(string key1,string key2)> keys = new List<(string, string)>();
+    public List<(string key1,string key2)> keys {get;private set;} = new List<(string, string)>(); 
 
 
     public void Add(string key1, string key2){

@@ -8,24 +8,31 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Daichi\\.nuget\\packages\\": {}
+    "C:\\Users\\lison\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daichi\\Documents\\ucrm\\KNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
+      "projectUniqueName": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
       "projectName": "KNXIntegrator",
-      "projectPath": "C:\\Users\\Daichi\\Documents\\ucrm\\KNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
-      "packagesPath": "C:\\Users\\Daichi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daichi\\Documents\\ucrm\\KNXIntegrator\\KNXIntegrator\\obj\\",
+      "projectPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
+      "packagesPath": "C:\\Users\\lison\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Daichi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +74,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

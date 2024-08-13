@@ -1,20 +1,20 @@
 ﻿KNXIntegrator
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\
 KNXIntegrator
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-c:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\App.xaml
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\App.xaml
 21862176075
 
-21138872654
-1981385397204
+191028319275
+198-635017904
 Views\MainWindow.xaml;Views\SimpleWindow.xaml;
 
-True
+False
 

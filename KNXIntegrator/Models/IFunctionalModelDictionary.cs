@@ -1,0 +1,11 @@
+namespace KNXIntegrator.Models;
+
+public interface IFunctionalModelDictionary{
+    public void Add_FunctionalModel (string name, FunctionalModel functionalModel);
+
+    public void Remove_FunctionalModel (string name);
+
+    public void Show_FunctionalModels ();
+
+    public FunctionalModel Get_FunctionalModel(string name);
+}

@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj": {}
+    "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj": {
+    "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj",
         "projectName": "KNXIntegrator.Tests",
-        "projectPath": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj",
-        "packagesPath": "C:\\Users\\Daichi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator.Tests\\obj\\",
+        "projectPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator.Tests\\KNXIntegrator.Tests.csproj",
+        "packagesPath": "C:\\Users\\lison\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Daichi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj": {
-                "projectPath": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj"
+              "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj": {
+                "projectPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj"
               }
             }
           }
@@ -82,26 +88,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj": {
+    "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
+        "projectUniqueName": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
         "projectName": "KNXIntegrator",
-        "projectPath": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
-        "packagesPath": "C:\\Users\\Daichi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daichi\\Documents\\ucrm\\MyKNXIntegrator\\KNXIntegrator\\obj\\",
+        "projectPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\KNXIntegrator.csproj",
+        "packagesPath": "C:\\Users\\lison\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lison\\Documents\\GitHub\\UCRM-KNXVirtualIntegrator\\KNXIntegrator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Daichi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -143,7 +155,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

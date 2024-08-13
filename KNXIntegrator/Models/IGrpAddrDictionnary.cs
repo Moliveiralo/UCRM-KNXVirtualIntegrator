@@ -1,8 +1,8 @@
 using System.Xml.Linq;
 
-namespace Models;
+namespace KNXIntegrator.Models;
 
-public interface IGrpAddrDictionnary{
+public interface IGrpAddrDictionary{
 
     public List<XElement> GetGrpAddr(string key);
     
