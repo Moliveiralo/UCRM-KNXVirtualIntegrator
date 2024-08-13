@@ -41,7 +41,7 @@ public class KeyPairDatabaseTests{
         
 
         //Assert
-        Assert.Equal("key2",database.GetByKey1("key1"));
+        Assert.Equal(new List<string>{"key2"},database.GetByKey1("key1"));
     }
 
 
@@ -56,7 +56,7 @@ public class KeyPairDatabaseTests{
         
 
         //Assert
-        Assert.Equal("key1",database.GetByKey1("key2"));
+        Assert.Equal(new List<string>{"key1"},database.GetByKey1("key2"));
     }
 
     [Fact]

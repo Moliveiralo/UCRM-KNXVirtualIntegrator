@@ -6,8 +6,8 @@ public interface IKeyPairDatabase{
 
     public void Remove(string key1, string key2);
 
-    public string GetByKey1(string key1);
+    public List<string> GetByKey1(string key1);
 
-    public string GetByKey2(string key2);
+    public List<string> GetByKey2(string key2);
     
 }

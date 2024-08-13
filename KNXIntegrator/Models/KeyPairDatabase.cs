@@ -16,18 +16,18 @@ public class KeyPairDatabase:IKeyPairDatabase{
     }
 
 
-    public string GetByKey1(string key1){
+    public List<string> GetByKey1(string key1){
         var result = keys.Where(k => k.key1 == key1)
                          .Select(k => k.key2)
-                         .FirstOrDefault(); // Use FirstOrDefault to handle cases where key1 is not found
+                         .ToList();
 
         return result;
     }
 
-    public string GetByKey2(string key2){
+    public List<string> GetByKey2(string key2){
                 var result = keys.Where(k => k.key2 == key2)
                          .Select(k => k.key1)
-                         .FirstOrDefault(); // Use FirstOrDefault to handle cases where key1 is not found
+                         .ToList();
 
         return result;
 
