@@ -11,13 +11,15 @@ namespace KNXIntegrator.Models
             {
                 "LightLivingRoom", new List<XElement>
                 {
-                    new XElement("GroupAddress", new XAttribute("Id", "GA-001"), new XAttribute("Name", "IeLightLivingRoom"))
+                    new XElement("GroupAddress", new XAttribute("Id", "GA-011"), new XAttribute("Name", "IeLightLivingRoom")),
+                    new XElement("GroupAddress", new XAttribute("Id", "GA-001"), new XAttribute("Name", "CmdLightLivingRoom"))
                 }
             },
             {
                 "LightBedroom", new List<XElement>
                 {
-                    new XElement("GroupAddress", new XAttribute("Id", "GA-002"), new XAttribute("Name", "IeLightBedroom"))
+                    new XElement("GroupAddress", new XAttribute("Id", "GA-012"), new XAttribute("Name", "IeLightBedroom")),
+                    new XElement("GroupAddress", new XAttribute("Id", "GA-002"), new XAttribute("Name", "CmdLightBedroom"))
                 }
             },
             {

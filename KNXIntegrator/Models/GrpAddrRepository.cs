@@ -1,10 +1,10 @@
 namespace KNXIntegrator.Models;
 
 using System.Xml.Linq;
-public class GrpAddrDictionary:IGrpAddrDictionary{
+public class GrpAddrRepository:IGrpAddrRepository{
     private Dictionary<string,List<XElement>> dictionary;
 
-    public GrpAddrDictionary(){
+    public GrpAddrRepository(){
 
         dictionary = new DummyGroupAddressDictionary().dictionary;
     }
