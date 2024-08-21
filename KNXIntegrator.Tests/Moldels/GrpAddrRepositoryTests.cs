@@ -27,7 +27,7 @@ public class GrpAddrRepositoryTests{
         var actual_addr2 = dict.GetGrpAddr("LightBedroom");
 
         //Assert
-        Assert.False(true,"ce test n'est pas bien ecrit donc pas grave");
+        Assert.Fail("ce test n'est pas bien ecrit donc pas grave");
 
     }
 
