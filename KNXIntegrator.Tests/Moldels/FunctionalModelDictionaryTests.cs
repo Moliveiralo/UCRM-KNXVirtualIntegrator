@@ -36,8 +36,7 @@ public class FunctionalModelDictionaryTests
         dict.Remove_FunctionalModel("classic");
 
         //Assert
-        var result = dict.Get_FunctionalModel("classic");
-        Assert.Null(result);
+        Assert.Throws<KeyNotFoundException>(() => dict.Get_FunctionalModel("classic"));
     }
 
     [Fact]
