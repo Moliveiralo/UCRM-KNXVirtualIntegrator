@@ -1,20 +1,20 @@
 ﻿KNXIntegrator
-
+1.0.0.0
 
 winexe
 C#
 .cs
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\
+c:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\
 KNXIntegrator
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\App.xaml
+c:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\App.xaml
 1-1644662438
 
-15-2130061082
+20911013714
 1981385397204
 Views\MainWindow.xaml;
 
-False
+True
 

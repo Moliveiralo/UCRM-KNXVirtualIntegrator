@@ -1,10 +1,22 @@
 
-test integration ModelManager 1
-restructuration grpaddr et dummy pour injection dependance 2
+test integration ModelManager W
+restructuration grpaddr et dummy pour injection dependance 1.5
 logs 2
 git ignore 3
 integration git 4
 KeyPairDatabase ordre des clés 6
-class Transfer 2
+class Transfer 1
 mock class realizing IGroupCommunication for tests 3
-write class Frame by cheking falcon sdk 1.5
+
+=>SURCONCEPTION.
+Ce que je veux : envoyer des trames et vérifier que les trames reçues correspondent à ce qui est voulu.
+Adresse de groupe Cmd,DPT
+-> trames envoyées.
+
+<-trames reçues : check que OK.
+
+public List<(int addr,GroupValue value)> FrameToSend(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
+public List<(int addr,GroupValue value)> FrameToReceive(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
+public List<(int addr,bool testOK)> Analysis(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
+
+-> faire ça en premier.
