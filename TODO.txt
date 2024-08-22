@@ -1,6 +1,10 @@
 
 test integration ModelManager 1
-restructuration grpaddr et dummy pour injection dependance 1.5
+restructuration grpaddr et dummy pour injection dependance 2
 logs 2
 git ignore 3
 integration git 4
+KeyPairDatabase ordre des clés 6
+class Transfer 2
+mock class realizing IGroupCommunication for tests 3
+write class Frame by cheking falcon sdk 1.5
