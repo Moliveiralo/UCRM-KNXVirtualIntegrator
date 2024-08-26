@@ -1,6 +1,6 @@
 
-test integration ModelManager W
-restructuration grpaddr et dummy pour injection dependance 1.5
+test integration ModelManager 
+
 logs 2
 git ignore 3
 integration git 4
@@ -20,3 +20,13 @@ public List<(int addr,GroupValue value)> FrameToReceive(int addr,int DPT, Enum m
 public List<(int addr,bool testOK)> Analysis(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
 
 -> faire ça en premier.
+
+installeur Max 2
+chat lib vscode 1
+make sure falcon lib is installed in project 1.5
+test DPT declarer 3
+mail EDLN 4
+se renseigner sur les DPTs pour avoir des tests adaptés.
+
+hello, j'ai une question pour l'installateur KNX Boost v2.3
+Je prends la dernière version de l'installeur, je le lance, ça installe bien KNX Boost, mais je peux pas lancer KNX Boost. Je me demandais si tu l'avais déjà envoyer à JFK, et si l'appli installée

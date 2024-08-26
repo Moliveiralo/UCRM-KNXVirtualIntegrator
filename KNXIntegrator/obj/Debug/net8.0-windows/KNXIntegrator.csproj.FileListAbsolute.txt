@@ -64,3 +64,4 @@ C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-wi
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.pdb
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.genruntimeconfig.cache
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\ref\KNXIntegrator.dll
+C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.csproj.AssemblyReference.cache
