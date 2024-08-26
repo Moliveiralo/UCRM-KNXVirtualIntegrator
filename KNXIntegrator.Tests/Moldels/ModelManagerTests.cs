@@ -7,9 +7,9 @@ public class ModelManagerTests{
     // private IGrpAddrRepository addrRepo = new GrpAddrRepository();
     // private FunctionalModelDictionary funDict = new FunctionalModelDictionary();
 
-    private DummyGroupCommunication:IGroupCommunication{
-        //TODO
-    }
+    // private DummyGroupCommunication:IGroupCommunication{
+    //     //TODO
+    // }
 
     // public ModelManagerTests(){
     //     //simulate creation of models by user
