@@ -1,8 +1,11 @@
-tests du converteur 1
+extract DPT then get payload size from DPT type code -> for another time. 
+Now : public List<(GroupAddress addr,GroupValue value)> FrameToSend(GroupAddress cmdAddr,int cmdPayloadSize,GroupAddress stateAddr, int statePayloadSize);
+write v2 for Transfer with no DPT 1
+write mock for comm 1
+write Act for Model Manager test 1.5
 faire Transfer.Analyze() et tests 2
+options autocompletion vs code
 
 
 installeur Max 
-test DPT declarer 3
-mail EDLN 4
-se renseigner sur les DPTs pour avoir des tests adaptés 3
+

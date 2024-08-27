@@ -45,16 +45,24 @@ public class TransferTests {
 
     [Fact]
     public void IsCorrectAnalyze(){
-        // //Arrange
-        // Transfer transfer = new Transfer();
-        // var expected = new List<(GroupAddress cmdAddr,GroupAddress stateAddr,bool testOK)>(new GroupAddress(1),new GroupAddress(2),true);
+        //Arrange
+        Transfer transfer = new Transfer();
+        var expected = new List<(GroupAddress cmdAddr,GroupAddress stateAddr,bool testOK)>{new GroupAddress(1),new GroupAddress(2),true};
         
-        // //Act
-        // //changer cet appel, voir interface
-        // //var actual = transfer.Analyze(cmdAddr: new GroupAddress(1),cmdDPT: new DptSimpleGeneric("1.001"),stateAddr: new GroupAddress(2), stateDPT: new DptSimpleGeneric("1.001"));
+        //Act
+        var actual = transfer.Analyze(
+            new List<(GroupAddress addr,GroupValue value)>{
+                (new GroupAddress(1),new GroupValue(false)),
+                (new GroupAddress(1),new GroupValue(true))
+            },
+            new List<(GroupAddress addr,GroupValue value)>{
+                (new GroupAddress(1),new GroupValue(false)),
+                (new GroupAddress(1),new GroupValue(true))
+            }
+            );
 
-        // //Assert
-        // Assert.Equals(expected,actual);
+        //Assert
+        Assert.Equals(expected,actual);
 
     }
 }

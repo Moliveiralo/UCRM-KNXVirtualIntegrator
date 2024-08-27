@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KNXIntegrator.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e10919d3923957a91842f43ec6cfa06909ac8d0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cddc801ff0d697c6962320befd9dba325dceb8c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("KNXIntegrator.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KNXIntegrator.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

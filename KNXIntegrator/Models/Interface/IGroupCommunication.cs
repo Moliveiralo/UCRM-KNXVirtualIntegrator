@@ -1,12 +1,9 @@
+using Knx.Falcon;
 namespace KNXIntegrator.Models;
 
 public interface IGroupCommunication
 {
-    // Task WriteAsync(Frame frame);
+    Task WriteListAsync(List<(GroupAddress addr,GroupValue value)>);
 
-    // Task WriteAsync(List<Frame> frames);
-
-    // Task<Frame> ReadAsync(int srcAddr);
-
-    // Task<List<Frame>> ReadAsync(List<int> srcAddrs);
+    Task<List<(GroupAddress addr,GroupValue value)>> ReadListAsync(List<(GroupAddress addr)>);
 }
