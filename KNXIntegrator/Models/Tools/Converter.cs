@@ -5,9 +5,15 @@ namespace KNXIntegrator.Models;
 public class Converter
 {
 
-    public static GroupValue IntToGroupValue(int value, int sizeInBit)
+    public GroupValue IntToGroupValue(int value, int sizeInBit)
     {
-        if (sizeInBit == 1)
+        if (sizeInBit == 0){
+            throw new ArgumentException("sizeInBit cannot be null");
+        }
+        else if (value > ((int)Math.Pow(2.0,(double)sizeInBit))-1){
+            throw new ArgumentException("value is too big, does not fit in sizeInBit");
+        }
+        else if (sizeInBit == 1)
         {
             // If sizeInBit is 1, the value can only be 0 or 1, which corresponds to a boolean.
             return new GroupValue(value != 0);

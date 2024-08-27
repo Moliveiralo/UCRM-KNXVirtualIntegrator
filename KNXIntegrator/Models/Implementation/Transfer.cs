@@ -9,16 +9,18 @@ public class Transfer : ITransfer
     public List<(GroupAddress addr, GroupValue value)> FrameToSend(GroupAddress cmdAddr, DptSimple cmdDPT, GroupAddress stateAddr, DptSimple stateDPT)
     {
         var ret = new List<(GroupAddress addr, GroupValue value)>();
-        ret.Add((cmdAddr, Converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
-        ret.Add((cmdAddr, Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdDPT.SizeInBit) - 1),(int)cmdDPT.SizeInBit)));
+        Converter converter = new Converter();
+        ret.Add((cmdAddr, converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
+        ret.Add((cmdAddr, converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdDPT.SizeInBit) - 1),(int)cmdDPT.SizeInBit)));
         return ret;
     }
 
     public List<(GroupAddress addr, GroupValue value)> FrameToReceive(GroupAddress cmdAddr, DptSimple cmdDPT, GroupAddress stateAddr, DptSimple stateDPT)
     {
         var ret = new List<(GroupAddress addr, GroupValue value)>();
-        ret.Add((stateAddr, Converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
-        ret.Add((stateAddr, Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)stateDPT.SizeInBit) - 1),(int)stateDPT.SizeInBit)));
+        Converter converter = new Converter();
+        ret.Add((stateAddr, converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
+        ret.Add((stateAddr, converter.IntToGroupValue(((int)Math.Pow(2.0, (double)stateDPT.SizeInBit) - 1),(int)stateDPT.SizeInBit)));
         return ret;
     }
 

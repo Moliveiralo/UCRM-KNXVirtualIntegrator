@@ -1,32 +1,8 @@
+tests du converteur 1
+faire Transfer.Analyze() et tests 2
 
-test integration ModelManager 
 
-logs 2
-git ignore 3
-integration git 4
-KeyPairDatabase ordre des clés 6
-class Transfer 1
-mock class realizing IGroupCommunication for tests 3
-
-=>SURCONCEPTION.
-Ce que je veux : envoyer des trames et vérifier que les trames reçues correspondent à ce qui est voulu.
-Adresse de groupe Cmd,DPT
--> trames envoyées.
-
-<-trames reçues : check que OK.
-
-public List<(int addr,GroupValue value)> FrameToSend(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
-public List<(int addr,GroupValue value)> FrameToReceive(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
-public List<(int addr,bool testOK)> Analysis(int addr,int DPT, Enum model, optional List<(int,int)> CorrespondanceArray);
-
--> faire ça en premier.
-
-installeur Max 2
-chat lib vscode 1
-make sure falcon lib is installed in project 1.5
+installeur Max 
 test DPT declarer 3
 mail EDLN 4
-se renseigner sur les DPTs pour avoir des tests adaptés.
-
-hello, j'ai une question pour l'installateur KNX Boost v2.3
-Je prends la dernière version de l'installeur, je le lance, ça installe bien KNX Boost, mais je peux pas lancer KNX Boost. Je me demandais si tu l'avais déjà envoyer à JFK, et si l'appli installée
+se renseigner sur les DPTs pour avoir des tests adaptés 3
