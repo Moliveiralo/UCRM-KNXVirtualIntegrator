@@ -6,21 +6,19 @@ namespace KNXIntegrator.Models;
 public class Transfer : ITransfer
 {
 
-    public List<(GroupAddress addr, GroupValue value)> FrameToSend(GroupAddress cmdAddr, DptSimple cmdDPT, GroupAddress stateAddr, DptSimple stateDPT)
+    public List<(GroupAddress addr, GroupValue value)> FrameToSend(GroupAddress cmdAddr,int cmdSizeInBit,GroupAddress stateAddr,int stateSizeInBit)
     {
         var ret = new List<(GroupAddress addr, GroupValue value)>();
-        Converter converter = new Converter();
-        ret.Add((cmdAddr, converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
-        ret.Add((cmdAddr, converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdDPT.SizeInBit) - 1),(int)cmdDPT.SizeInBit)));
+        ret.Add((cmdAddr, Converter.IntToGroupValue(0,cmdSizeInBit)));
+        ret.Add((cmdAddr, Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdSizeInBit) - 1),cmdSizeInBit)));
         return ret;
     }
 
-    public List<(GroupAddress addr, GroupValue value)> FrameToReceive(GroupAddress cmdAddr, DptSimple cmdDPT, GroupAddress stateAddr, DptSimple stateDPT)
+    public List<(GroupAddress addr, GroupValue value)> FrameToReceive(GroupAddress cmdAddr,int cmdSizeInBit,GroupAddress stateAddr,int stateSizeInBit)
     {
         var ret = new List<(GroupAddress addr, GroupValue value)>();
-        Converter converter = new Converter();
-        ret.Add((stateAddr, converter.IntToGroupValue(0,(int)cmdDPT.SizeInBit)));
-        ret.Add((stateAddr, converter.IntToGroupValue(((int)Math.Pow(2.0, (double)stateDPT.SizeInBit) - 1),(int)stateDPT.SizeInBit)));
+        ret.Add((stateAddr, Converter.IntToGroupValue(0,stateSizeInBit)));
+        ret.Add((stateAddr, Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)stateSizeInBit) - 1),stateSizeInBit)));
         return ret;
     }
 

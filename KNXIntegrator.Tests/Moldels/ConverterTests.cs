@@ -10,11 +10,11 @@ public class ConverterTests
     public void ConvertBoolToValue()
     {
         //Arrange
-        Converter converter = new Converter();
+
 
         //Act
-        var val1 = converter.IntToGroupValue(1, 1);
-        var val2 = converter.IntToGroupValue(0, 1);
+        var val1 = Converter.IntToGroupValue(1, 1);
+        var val2 = Converter.IntToGroupValue(0, 1);
 
 
         //Assert
@@ -27,11 +27,11 @@ public class ConverterTests
     public void ConvertLessThan8bits()
     {
         //Arrange
-        Converter converter = new Converter();
+
 
         //Act
-        var val1 = converter.IntToGroupValue(0, 7);
-        var val2 = converter.IntToGroupValue(127, 7);
+        var val1 = Converter.IntToGroupValue(0, 7);
+        var val2 = Converter.IntToGroupValue(127, 7);
 
 
         //Assert
@@ -43,11 +43,11 @@ public class ConverterTests
     public void Convert8bits()
     {
         //Arrange
-        Converter converter = new Converter();
+
 
         //Act
-        var val1 = converter.IntToGroupValue(0, 8);
-        var val2 = converter.IntToGroupValue(255, 8);
+        var val1 = Converter.IntToGroupValue(0, 8);
+        var val2 = Converter.IntToGroupValue(255, 8);
 
 
         //Assert
@@ -59,12 +59,12 @@ public class ConverterTests
     public void ConvertMoreThan8bits()
     {
         //Arrange
-        Converter converter = new Converter();
+
 
         //Act
-        var val1 = converter.IntToGroupValue(0, 16);
-        var val2 = converter.IntToGroupValue(255, 16);
-        var val3 = converter.IntToGroupValue(65535, 16);
+        var val1 = Converter.IntToGroupValue(0, 16);
+        var val2 = Converter.IntToGroupValue(255, 16);
+        var val3 = Converter.IntToGroupValue(65535, 16);
 
 
         //Assert
@@ -77,11 +77,11 @@ public class ConverterTests
     public void RaiseIncorrectParameters()
     {
         //Arrange
-        Converter converter = new Converter();
+
 
         //Act and Assert
-        Assert.Throws<ArgumentException>(() => converter.IntToGroupValue(1, 0));
-        Assert.Throws<ArgumentException>(() => converter.IntToGroupValue(256, 8));
-        Assert.Throws<ArgumentException>(() => converter.IntToGroupValue(256, 12));
+        Assert.Throws<ArgumentException>(() => Converter.IntToGroupValue(1, 0));
+        Assert.Throws<ArgumentException>(() => Converter.IntToGroupValue(256, 8));
+        Assert.Throws<ArgumentException>(() => Converter.IntToGroupValue(256, 12));
     }
 }

@@ -1,0 +1,9 @@
+using Knx.Falcon;
+
+namespace KNXIntegrator.Models;
+
+public class DictToList{
+    public DictToList<(GroupAddress addr, GroupValue val)> DictToList (){
+        
+    }
+}

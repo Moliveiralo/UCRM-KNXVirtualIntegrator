@@ -3,7 +3,7 @@ namespace KNXIntegrator.Models;
 
 public interface IGroupCommunication
 {
-    Task WriteListAsync(List<(GroupAddress addr,GroupValue value)>);
+    public Task WriteListAsync(List<(GroupAddress addr,GroupValue value)> toWrite);
 
-    Task<List<(GroupAddress addr,GroupValue value)>> ReadListAsync(List<(GroupAddress addr)>);
+    public Task<List<(GroupAddress addr,GroupValue value)>> ReadListAsync(List<GroupAddress> toRead);
 }

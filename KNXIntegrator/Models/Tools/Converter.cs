@@ -5,7 +5,7 @@ namespace KNXIntegrator.Models;
 public class Converter
 {
 
-    public GroupValue IntToGroupValue(int value, int sizeInBit)
+    public static GroupValue IntToGroupValue(int value, int sizeInBit)
     {
         if (sizeInBit == 0){
             throw new ArgumentException("sizeInBit cannot be null");

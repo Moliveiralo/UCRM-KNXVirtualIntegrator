@@ -1,10 +1,13 @@
-extract DPT then get payload size from DPT type code -> for another time. 
-Now : public List<(GroupAddress addr,GroupValue value)> FrameToSend(GroupAddress cmdAddr,int cmdPayloadSize,GroupAddress stateAddr, int statePayloadSize);
-write v2 for Transfer with no DPT 1
-write mock for comm 1
-write Act for Model Manager test 1.5
+1 - installer les extentions vs code pour plus avoir l'autocomplétion pourrie, et avoir un débuggage plus facile.
+
+
+2 - changer la manière dont les trames sont crées, stockées et envoyées. On crée les frames, on les envoie une par une et on les teste une par une.
+Pour la taille des frames, on peut mettre une valeur pour défaut de un pour l'instant et plus tard rajouter une méthode pour la fixer.
+public void ConstructAndAdd (GroupAddress cmdAddr,int cmdFrameSize,GroupAddress stateAddr,int stateFrameSize)
+public (GroupAddress, GroupValue) Get
+
 faire Transfer.Analyze() et tests 2
-options autocompletion vs code
+
 
 
 installeur Max 

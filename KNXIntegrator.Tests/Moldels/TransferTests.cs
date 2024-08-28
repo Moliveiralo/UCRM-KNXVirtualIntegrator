@@ -19,7 +19,7 @@ public class TransferTests {
             };
         
         //Act
-        List<(GroupAddress addr, GroupValue value)> actual = transfer.FrameToSend(cmdAddr: new GroupAddress(1),cmdDPT: new Dpt1(),stateAddr: new GroupAddress(2), stateDPT: new Dpt1());
+        List<(GroupAddress addr, GroupValue value)> actual = transfer.FrameToSend(cmdAddr: new GroupAddress(1),1,stateAddr: new GroupAddress(2), 1);
 
         //Assert
         Assert.Equal(expected,actual);
@@ -35,7 +35,7 @@ public class TransferTests {
             };
 
         //Act
-        List<(GroupAddress addr, GroupValue value)> actual = transfer.FrameToReceive(cmdAddr: new GroupAddress(1),cmdDPT: new Dpt1(),stateAddr: new GroupAddress(2), stateDPT: new Dpt1());
+        List<(GroupAddress addr, GroupValue value)> actual = transfer.FrameToReceive(cmdAddr: new GroupAddress(1),1,stateAddr: new GroupAddress(2), 1);
 
         //Assert
         Assert.Equal(expected,actual);
@@ -43,27 +43,27 @@ public class TransferTests {
 
     }
 
-    [Fact]
-    public void IsCorrectAnalyze(){
-        //Arrange
-        Transfer transfer = new Transfer();
-        var expected = new List<(GroupAddress cmdAddr,GroupAddress stateAddr,bool testOK)>{new GroupAddress(1),new GroupAddress(2),true};
+    // [Fact]
+    // public void IsCorrectAnalyze(){
+    //     //Arrange
+    //     Transfer transfer = new Transfer();
+    //     var expected = new List<(GroupAddress cmdAddr,GroupAddress stateAddr,bool testOK)>{new GroupAddress(1),new GroupAddress(2),true};
         
-        //Act
-        var actual = transfer.Analyze(
-            new List<(GroupAddress addr,GroupValue value)>{
-                (new GroupAddress(1),new GroupValue(false)),
-                (new GroupAddress(1),new GroupValue(true))
-            },
-            new List<(GroupAddress addr,GroupValue value)>{
-                (new GroupAddress(1),new GroupValue(false)),
-                (new GroupAddress(1),new GroupValue(true))
-            }
-            );
+    //     //Act
+    //     var actual = transfer.Analyze(
+    //         new List<(GroupAddress addr,GroupValue value)>{
+    //             (new GroupAddress(1),new GroupValue(false)),
+    //             (new GroupAddress(1),new GroupValue(true))
+    //         },
+    //         new List<(GroupAddress addr,GroupValue value)>{
+    //             (new GroupAddress(1),new GroupValue(false)),
+    //             (new GroupAddress(1),new GroupValue(true))
+    //         }
+    //         );
 
-        //Assert
-        Assert.Equals(expected,actual);
+    //     //Assert
+    //     Assert.Equals(expected,actual);
 
-    }
+    // }
 }
 

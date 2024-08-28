@@ -215,3 +215,5 @@ C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\Knx.Falcon.dll
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\log4net.dll
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\Castle.Core.dll
+C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator.Tests\bin\Debug\net8.0-windows\Moq.dll

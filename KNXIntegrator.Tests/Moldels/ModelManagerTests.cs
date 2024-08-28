@@ -4,6 +4,7 @@ using System.Xml.Linq;
 using System.Linq;
 using System.Threading.Tasks;
 using Knx.Falcon;
+using Moq;
 
 namespace KNXIntegrator.Models.IntegrationTests;
 
@@ -78,32 +79,48 @@ public class ModelManagerTests
     }
 
     [Fact]
-    public async void GeneralWalkthrough(){
+    public async void GeneralWalkthrough()
+    {
         //Arrange
-        var mockComm = new Mock<IGroupCommunication>;
+        ITransfer transfer = new Transfer();
+        Dictionary<string, List<XElement>> mockAddresses = CreateMockGroupedAddresses();
+        var mockComm = new Mock<IGroupCommunication>();
 
         mockComm
-        .Setup(gc => gc.WriteListAsync)
+        .Setup(gc => gc.WriteListAsync(It.IsAny<List<(GroupAddress addr, GroupValue val)>>()))
+        .Return(Task.CompletedTask);
+
+        mockComm
+        .Setup(gc => gc.ReadListAsync(It.IsAny<List<GroupAddress>>()))
+        .ReturnsAsync(new List<(GroupAddress, GroupValue)>{
+            (new GroupAddress(2),new GroupValue(false)),
+            (new GroupAddress(2),new GroupValue(true))
+        });
 
 
-        Dictionary<string, List<XElement>> mockAddresses = CreateMockGroupedAddresses();
 
-        ITransfer transfer = new Transfer();
+
+
 
         //Act
-        var toSend = new List<(GroupAddress addr, GroupValut val)>();
-        foreach(var kvp in mockAddresses){
-            //not the right format data
-            toSend.AddRange(transfer.FrameToSend(Parse(kvp.value[0].address),kvp.value[0].id,Parse(kvp.value[1].address),kvp.value[1].id));
+
+
+    var testResult = new List<(GroupAddress, GroupAddress, bool)>();
+        foreach (var kvp in mockAddresses)
+        {
+            List<(GroupAddress,GroupValue)> toSend = transfer.FrameToSend(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value), 1);
+            mockComm.WriteListAsync(toSend);
+            List<GroupAddress> stateAddr =GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value);
+            var received = await mockComm.Object.ReadListAsync(stateAddr);
+            var toReceive = transfer.FrameToReceive(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1);
+            testResult.AddRange(transfer.Analyze(toReceive, received));
         }
-        mockComm.WriteListAsync(toSend);
-        var stateAddr = new List<GroupAddress addr>();
-        foreach(var kvp in mockAddresses){
-            stateAddr.Add(new)
-        }
-        var received = await mockComm.ReadListAsync(stateAddr);
-        var toReceive = transfer.FrameToReceive(mockAddresses.Format());
-        var Alaysis = transfer.Analyze(toReceive,received);
+
+        //Assert
+        var expected = new List<(GroupAddress, GroupAddress, bool)>{
+            (new GroupAddress(1),new GroupAddress(2), true)
+        };
+        Assert.Equal(expected, testResult);
 
 
 
