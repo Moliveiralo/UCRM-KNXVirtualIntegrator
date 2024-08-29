@@ -1,15 +1,5 @@
-1 - installer les extentions vs code pour plus avoir l'autocomplétion pourrie, et avoir un débuggage plus facile.
--> apprendre a debugger
-
-
-2 - changer la manière dont les trames sont crées, stockées et envoyées. On crée les frames, on les envoie une par une et on les teste une par une.
-Pour la taille des frames, on peut mettre une valeur pour défaut de un pour l'instant et plus tard rajouter une méthode pour la fixer.
-public void ConstructAndAdd (GroupAddress cmdAddr,int cmdFrameSize,GroupAddress stateAddr,int stateFrameSize)
-public (GroupAddress, GroupValue) Get
-
-faire Transfer.Analyze() et tests 2
-
-
-
-installeur Max 
+ITransfer 1
+Transfer 2
+Transfertests 3
+ModelManagerTests 4
 
