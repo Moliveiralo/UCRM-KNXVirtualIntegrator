@@ -1,4 +1,5 @@
 1 - installer les extentions vs code pour plus avoir l'autocomplétion pourrie, et avoir un débuggage plus facile.
+-> apprendre a debugger
 
 
 2 - changer la manière dont les trames sont crées, stockées et envoyées. On crée les frames, on les envoie une par une et on les teste une par une.

@@ -102,25 +102,45 @@ public class ModelManagerTests
 
 
 
+        //     //Act
+
+
+        // var testResult = new List<(GroupAddress, GroupAddress, bool)>();
+        //     foreach (var kvp in mockAddresses)
+        //     {
+        //         List<(GroupAddress,GroupValue)> toSend = transfer.FrameToSend(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value), 1);
+        //         mockComm.WriteListAsync(toSend);
+        //         List<GroupAddress> stateAddr =GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value);
+        //         var received = await mockComm.Object.ReadListAsync(stateAddr);
+        //         var toReceive = transfer.FrameToReceive(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1);
+        //         testResult.AddRange(transfer.Analyze(toReceive, received));
+        //     }
+
+        //     //Assert
+        //     var expected = new List<(GroupAddress, GroupAddress, bool)>{
+        //         (new GroupAddress(1),new GroupAddress(2), true)
+        //     };
+        //     Assert.Equal(expected, testResult);
+
+
+
         //Act
-
-
-    var testResult = new List<(GroupAddress, GroupAddress, bool)>();
+        var testTable = new List<(GroupAddress,GroupValue,GroupAddress,GroupValue?,bool?)>();
         foreach (var kvp in mockAddresses)
         {
-            List<(GroupAddress,GroupValue)> toSend = transfer.FrameToSend(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value), 1);
-            mockComm.WriteListAsync(toSend);
-            List<GroupAddress> stateAddr =GroupAddress.Parse(kvp.Value[1].Attribute("Address").Value);
-            var received = await mockComm.Object.ReadListAsync(stateAddr);
-            var toReceive = transfer.FrameToReceive(GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1,GroupAddress.Parse(kvp.Value[0].Attribute("Address").Value), 1);
-            testResult.AddRange(transfer.Analyze(toReceive, received));
+            GroupAddress cmdAddr = kvp.Value[0].Attribute("Address").Value;
+            GroupAddress stateAddr = kvp.Value[1].Attribute("Address").Value;
+
+            List<(GroupAddress,GroupValue,GroupAddress,GroupValue?,bool?)> records = transfer.GetRecords(cmdAddr,stateAddr);
+            foreach((GroupAddress cmdAddr,GroupValue cmdVal,GroupAddress stateAddr, GroupValue? stateVal, bool? testOK) record in records){
+                mockComm.Object.WriteAsync(cmdAddr, cmdVal);
+                stateVal = mockComm.Object.ReadAsync(stateAddr);
+                testOK = transfer.check(cmdValue,stateValue);
+            }
+            testTable.AddRange(records);
+
         }
 
-        //Assert
-        var expected = new List<(GroupAddress, GroupAddress, bool)>{
-            (new GroupAddress(1),new GroupAddress(2), true)
-        };
-        Assert.Equal(expected, testResult);
 
 
 
