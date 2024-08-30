@@ -5,5 +5,5 @@ public interface IGroupCommunication
 {
     public Task WriteAsync((GroupAddress addr,GroupValue value) toWrite);
 
-    public Task<(GroupValue value)> ReadAsync(GroupAddress toRead);
+    public Task<GroupValue> ReadAsync(GroupAddress toRead);
 }

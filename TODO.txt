@@ -1,5 +1,35 @@
-ITransfer 1
-Transfer 2
-Transfertests 3
-ModelManagerTests 4
+
+ModelManagerTests
+j'aime pas la logique actuelle de ma classe. Je voudrais Analysis qui ne renvoie que des données et qui ne s'occupe pas de la structure de la data.
+
+Compte rendu JFK
+Ce que j'ai appris à faire 
+tests
+architecture et UML
+connaissances domotique knx
+manipulation ets
+acces a donnée (xml)
+git et github
+csharp
+projets dotnet
+lire une doc (falcon SDK)
+écrire une doc
+
+Ce qui était bien
+les réus hebdomadaires et présentation à faire
+travail en équipe 
+autonomie et bon suivi
+2 projets : on réutilise les connaissances du premier, et satisfaction d'avoir fini un projet au moins.
+
+Ce qui était moins bien 
+Beaucoup de docs knx au début, moins aurait suffit
+
+Ce que je n'ai pas maitrisé
+gantt
+UI
+électronique et manipulation physique
+partie formation/pédagogie : pas autant que j'imaginais mais  c'est qu'on a pas pris beaucoup d'initiatives
+
+
+
 

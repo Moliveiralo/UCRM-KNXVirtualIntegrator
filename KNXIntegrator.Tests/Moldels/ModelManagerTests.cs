@@ -8,6 +8,8 @@ using Moq;
 
 namespace KNXIntegrator.Models.IntegrationTests;
 
+
+
 public class ModelManagerTests
 {
     // Helper method to create mock XElement
@@ -52,22 +54,23 @@ public class ModelManagerTests
 
         mockComm
         .Setup(gc => gc.ReadAsync(It.IsAny<GroupAddress>()))
-        .ReturnsAsync((new GroupAddress(2),new GroupValue(true)));
+        .ReturnsAsync(new GroupValue(true));
 
 
 
 
 
         //Act
-        var testTable = new List<(GroupAddress,GroupValue,GroupAddress,GroupValue?,bool?)>();
+        var testTable = new List<Analysis.RecordEntry>();
         foreach (var kvp in mockAddresses)
         {
 
-            List<(GroupAddress,GroupValue,GroupAddress,GroupValue?,bool?)> records = analyzer.GetRecords(kvp.Value[0].Attribute("Address").Value,kvp.Value[1].Attribute("Address").Value,1);
-            foreach((GroupAddress cmdAddr,GroupValue cmdVal,GroupAddress stateAddr, GroupValue? stateVal, bool? testOK) in records){
-                mockComm.Object.WriteAsync((cmdAddr, cmdVal));
-                stateVal = mockComm.Object.ReadAsync(stateAddr);
-                testOK = analyzer.Check(cmdVal,stateVal);
+            List<Analysis.RecordEntry> records = analyzer.GetRecords(kvp.Value[0].Attribute("Address").Value,kvp.Value[1].Attribute("Address").Value,1);
+            //foreach((GroupAddress cmdAddr,GroupValue cmdVal,GroupAddress stateAddr, GroupValue? stateVal, bool? testOK) in records){
+            for(int i = 0;i<records.Count;i++){
+                mockComm.Object.WriteAsync((records[i].CmdAddr, records[i].CmdVal));
+                records[i].StateVal = mockComm.Object.ReadAsync(records[i].stateAddr);
+                records[i].TestOK = analyzer.Check(records[i].CmdVal,records[i].StateVal);
             }
             testTable.AddRange(records);
 
