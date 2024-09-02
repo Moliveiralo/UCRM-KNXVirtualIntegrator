@@ -2,20 +2,26 @@ using Knx.Falcon;
 
 namespace KNXIntegrator.Models;
 
-public class Analysis:IAnalysis
+public class Analysis : IAnalysis
 {
-
     public record RecordEntry
     {
-        public GroupAddress CmdAddr { get; set;}
-        public GroupValue CmdVal { get; set;}
-        public GroupAddress StateAddr { get; set;}
-        public GroupValue? StateVal { get; set;}
-        public bool? TestOK { get; set;}
-        
+        public GroupAddress CmdAddr { get; init; }
+        public GroupValue CmdVal { get; init; }
+        public GroupAddress StateAddr { get; init; }
+        public GroupValue? StateVal { get; set; }
+        public bool? TestOK { get; set; }
+
+        public override string ToString()
+        {
+            return ("CmdAddr = " + CmdAddr.ToString() + "\nCmdVal = " + CmdVal.ToString() + "\nStateAddr = " +
+                    StateAddr.ToString() + "\nStateVal = " + StateVal.ToString() + "\nTestOK = " + TestOK.ToString() +
+                    "\n\n");
+        }
     }
+
     public List<RecordEntry> GetRecords(GroupAddress cmdAddr,
-        GroupAddress stateAddr,int cmdSizeInBit)
+        GroupAddress stateAddr, int cmdSizeInBit)
     {
         var ret = new List<RecordEntry>();
         ret.Add(new RecordEntry
@@ -35,12 +41,10 @@ public class Analysis:IAnalysis
             TestOK = null
         });
         return ret;
-        
     }
 
     public bool Check(GroupValue cmdValue, GroupValue stateValue)
     {
-        return Equals(cmdValue,stateValue);
+        return Equals(cmdValue, stateValue);
     }
-    
 }

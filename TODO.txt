@@ -1,6 +1,9 @@
+Integration test : GeneralTest
 
-ModelManagerTests
-j'aime pas la logique actuelle de ma classe. Je voudrais Analysis qui ne renvoie que des données et qui ne s'occupe pas de la structure de la data.
+
+
+
+
 
 Compte rendu JFK
 Ce que j'ai appris à faire 

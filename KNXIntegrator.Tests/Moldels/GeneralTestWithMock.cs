@@ -5,10 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Knx.Falcon;
 using Moq;
+using Xunit.Abstractions;
 
 namespace KNXIntegrator.Models.IntegrationTests;
 
-public class ModelManagerTests
+public class GeneralTestWithMock
 {
     // Helper method to create mock XElement
     private XElement CreateGroupAddress(string id, string name, string address)
@@ -109,5 +110,7 @@ public class ModelManagerTests
             }
         };
         Assert.Equal(expected, testTable);
+        
+        
     }
 }
