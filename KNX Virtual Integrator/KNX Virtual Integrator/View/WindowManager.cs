@@ -15,14 +15,18 @@ public class WindowManager
         MainWindow = new MainWindow(_mainViewModel);
         //SettingsWindow = new SettingsWindow(_mainViewModel);
         ConnectionWindow = new ConnectionWindow(_mainViewModel);
+        TestAnalWindow = new TESTANALYSE(_mainViewModel);
     }
 
     public MainWindow MainWindow { get; }
     public SettingsWindow? SettingsWindow { get; }
     public ConnectionWindow? ConnectionWindow { get; private set; }
+    public TESTANALYSE? TestAnalWindow { get; private set; }
 
     public void ShowMainWindow() => MainWindow.Show();
     public void ShowSettingsWindow() => SettingsWindow?.Show();
+    public void ShowAnalWindow() => TestAnalWindow?.Show();
+
     public void ShowConnectionWindow()
     {
         try

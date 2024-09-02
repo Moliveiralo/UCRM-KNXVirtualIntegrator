@@ -1,0 +1,29 @@
+<Window x:Class="KNX_Virtual_Integrator.View.Windows.TESTANALYSE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:KNX_Virtual_Integrator.View.Windows"
+        mc:Ignorable="d"
+        Title="TESTANALYSE" Height="450" Width="800"
+        Background="Aqua">
+    <Grid>
+        <TextBlock Text="Salut Daihi"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="0,10,0,0"/>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button Content="Lancer l'analyse" 
+                    Height="30" 
+                    Margin="10" Padding="5"
+                    Command="{Binding StartAnalysis}"/>
+            
+            <TextBlock x:Name="DisplayTextBlock" 
+                       Text="{Binding AnalysisResult}" 
+                       FontSize="16" 
+                       Margin="10" 
+                       HorizontalAlignment="Center"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

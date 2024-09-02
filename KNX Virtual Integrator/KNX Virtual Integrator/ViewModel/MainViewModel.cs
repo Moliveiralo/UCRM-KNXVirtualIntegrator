@@ -116,6 +116,25 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
         OpenConnectionWindowCommand = new RelayCommand(
             () => _windowManager.ShowConnectionWindow()
         );
+        
+        
+        
+        
+        
+        OpenAnal = new RelayCommand(
+            () => _windowManager.ShowAnalWindow()
+        );
+        
+        StartAnalysis = new RelayCommand(
+            () => _windowManager.ShowAnalWindow()
+        );
+        
+        
+            
+            
+            
+            
+            
 
         ConnectBusCommand = new RelayCommand(
             async () => await modelManager.BusConnection.ConnectBusAsync()
@@ -213,7 +232,12 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
     /// Command that disconnects from the bus asynchronously.
     /// </summary>
     public RelayCommand DisconnectBusCommand { get; private set; } 
+    
+    public RelayCommand OpenAnal { get; private set; } 
+    
+    public RelayCommand StartAnalysis { get; private set; }
 
+    public string AnalysisResult = "";
     
     /// <summary>
     /// Command that refreshes the list of bus interfaces asynchronously.
