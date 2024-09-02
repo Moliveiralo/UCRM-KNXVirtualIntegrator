@@ -18,8 +18,22 @@ public class AnalysisTests
         Assert.Equal(
             new List<Analysis.RecordEntry>
             {
-                new Analysis.RecordEntry(new GroupAddress(1), new GroupValue(false), new GroupAddress(2), null, null),
-                new Analysis.RecordEntry(new GroupAddress(1), new GroupValue(true), new GroupAddress(2), null, null)
+                new Analysis.RecordEntry
+                {
+                    CmdAddr = new GroupAddress(1),
+                    CmdVal =  new GroupValue(false),
+                    StateAddr =   new GroupAddress(2),
+                    StateVal = null,
+                    TestOK = null
+                },
+                new Analysis.RecordEntry
+                {
+                    CmdAddr = new GroupAddress(1),
+                    CmdVal =  new GroupValue(true),
+                    StateAddr =   new GroupAddress(2),
+                    StateVal = null,
+                    TestOK = null 
+                }
             },
             actual);
 
