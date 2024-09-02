@@ -20,7 +20,11 @@
             
             <TextBlock x:Name="DisplayTextBlock" 
                        Text="{Binding AnalysisResult}" 
-                       FontSize="16" 
+                       FontSize="16"
+                       VerticalAlignment="Center"
+                       Background="White"
+                       Width="500"
+                       TextWrapping="Wrap"
                        Margin="10" 
                        HorizontalAlignment="Center"/>
 

@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
@@ -52,6 +53,22 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
         }
     }
     public bool IsConnected => _busConnection.IsConnected;
+    
+    private string _analysisResult;
+
+    // Cette propriété est liée à la TextBlock
+    public string AnalysisResult
+    {
+        get { return _analysisResult; }
+        set
+        {
+            if (_analysisResult != value)
+            {
+                _analysisResult = value;
+                OnPropertyChanged(nameof(AnalysisResult));
+            }
+        }
+    }
 
     /* ------------------------------------------------------------------------------------------------
     ----------------------------------------- CONSTRUCTEUR  -------------------------------------------
@@ -121,12 +138,14 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
         
         
         
+        
+        
         OpenAnal = new RelayCommand(
             () => _windowManager.ShowAnalWindow()
         );
         
         StartAnalysis = new RelayCommand(
-            () => _windowManager.ShowAnalWindow()
+            () => AnalysisResult = PerformAnalysis()
         );
         
         
@@ -172,8 +191,16 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
                 return success;
             }
         );
-    }
 
+        AnalysisResult = "Essai de string de résultat un peu long et tout tout tout tout...";
+    }
+    
+    
+    private string PerformAnalysis()
+    {
+        // Remplace cela par ta logique de calcul
+        return "Résultat de l'analyse";
+    }
 
 
     /* ------------------------------------------------------------------------------------------------
@@ -237,7 +264,7 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
     
     public RelayCommand StartAnalysis { get; private set; }
 
-    public string AnalysisResult = "";
+    
     
     /// <summary>
     /// Command that refreshes the list of bus interfaces asynchronously.
@@ -341,6 +368,19 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
     public void OnSliderClick(object sender, RoutedEventArgs e)
     {
         _modelManager.SettingsSliderClickHandler.OnSliderClick(sender, e);
+    }
+    
+    
+    
+    
+    
+    
+    // Gestionnaire de l'événement de changement de propriété
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    protected void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
     
 }
