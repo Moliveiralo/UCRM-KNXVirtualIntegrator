@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KNX_Virtual_Integrator.View.Windows"
         mc:Ignorable="d"
         Title="TESTANALYSE" Height="450" Width="800"
-        Background="Aqua">
+        Background="LightGray">
     <Grid>
         <TextBlock Text="Salut Daihi"
                    FontWeight="Bold"
@@ -18,15 +18,18 @@
                     Margin="10" Padding="5"
                     Command="{Binding StartAnalysis}"/>
             
-            <TextBlock x:Name="DisplayTextBlock" 
-                       Text="{Binding AnalysisResult}" 
-                       FontSize="16"
-                       VerticalAlignment="Center"
-                       Background="White"
-                       Width="500"
-                       TextWrapping="Wrap"
-                       Margin="10" 
-                       HorizontalAlignment="Center"/>
+            <ScrollViewer MaxHeight="200">
+                <TextBlock x:Name="DisplayTextBlock" 
+                           Text="{Binding AnalysisResult, Mode=OneWay}" 
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           Background="White"
+                           Width="500"
+                           TextWrapping="Wrap"
+                           Margin="10" 
+                           HorizontalAlignment="Center"/>
+            </ScrollViewer>
+            
 
         </StackPanel>
     </Grid>

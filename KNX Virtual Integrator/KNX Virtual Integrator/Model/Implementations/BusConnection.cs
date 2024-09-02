@@ -48,7 +48,7 @@ public class BusConnection : ObservableObject ,IBusConnection
         {
             if (_isConnected == value) return;
             _isConnected = value;
-            OnPropertyChanged(nameof(IsConnected));
+            //OnPropertyChanged(nameof(IsConnected));
         }
     }
 
@@ -308,15 +308,9 @@ public class BusConnection : ObservableObject ,IBusConnection
     {
         if (e.PropertyName == nameof(BusConnection.IsConnected))
         {
-            OnPropertyChanged(nameof(IsConnected));
+            //OnPropertyChanged(nameof(IsConnected));
         }
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected void OnPropertyChanged(string propertyName)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
     
 }

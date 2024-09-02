@@ -25,7 +25,22 @@ public class WindowManager
 
     public void ShowMainWindow() => MainWindow.Show();
     public void ShowSettingsWindow() => SettingsWindow?.Show();
-    public void ShowAnalWindow() => TestAnalWindow?.Show();
+    public void ShowAnalWindow()
+    {
+        try
+        {
+            if (TestAnalWindow is not { IsVisible: true })
+            {
+                TestAnalWindow = new TESTANALYSE(_mainViewModel);
+            }
+
+            TestAnalWindow.Show();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Erreur lors de l'ouverture de la fenêtre : {ex.Message}");
+        }
+    }
 
     public void ShowConnectionWindow()
     {
