@@ -1,4 +1,32 @@
-Integration test : GeneralTest
+Unit test GrpAddrRepo
+waiting for Communication class
+lier à l'interface de anal
+
+Integration of all components in integration-branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
