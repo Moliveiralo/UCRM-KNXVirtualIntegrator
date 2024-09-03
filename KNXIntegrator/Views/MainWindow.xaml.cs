@@ -19,7 +19,6 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        //SimpleWindow simpleWindow = new SimpleWindow();
-        //simpleWindow.Show();
+
     }
 }

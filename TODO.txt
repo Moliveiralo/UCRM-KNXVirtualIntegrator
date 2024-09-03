@@ -1,8 +1,13 @@
-Unit test GrpAddrRepo, collection dict differ
+AnalysisExecutorUnitTest
+Integration test of all i have to understand how to use my things
+Interface and implementation of executor
+
+
 waiting for Communication class
 lier à l'interface de anal
 
 Integration of all components in integration-branch
+
 
 
 
