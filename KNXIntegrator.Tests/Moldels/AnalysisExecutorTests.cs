@@ -1,3 +1,4 @@
+using System.Collections;
 using Xunit;
 using Knx.Falcon;
 using System.Xml.Linq;
@@ -9,7 +10,7 @@ public class AnalysisExecutorTests
 {
     
     // Helper method to create mock XElement
-    private XElement CreateGroupAddress(string id, string name, string address)
+    private static XElement CreateGroupAddress(string id, string name, string address)
     {
         return new XElement("GroupAddress",
             new XAttribute("Id", id),
@@ -19,7 +20,7 @@ public class AnalysisExecutorTests
     }
 
     // Create mock data for _groupedAddresses
-    private Dictionary<string, List<XElement>> CreateMockGroupedAddresses()
+    private static Dictionary<string, List<XElement>> CreateMockGroupedAddresses()
     {
         var mockGroupedAddresses = new Dictionary<string, List<XElement>>();
 
@@ -36,7 +37,7 @@ public class AnalysisExecutorTests
         return mockGroupedAddresses;
     }
 
-    private Mock<IGroupCommunication> CreateMockCommunication()
+    private static Mock<IGroupCommunication> CreateMockCommunication()
     {
         var mockComm = new Mock<IGroupCommunication>();
 
@@ -51,19 +52,35 @@ public class AnalysisExecutorTests
         return mockComm;
     }
     
+    // ClassData provider for the theory
+    public class AnalysisExecutorTestData : IEnumerable<object[]>
+    {
+        public IEnumerator<object[]> GetEnumerator()
+        {
+            var mockComm = CreateMockCommunication();
+            var mockGroupedAddresses = CreateMockGroupedAddresses();
+            var analyzer = new Mock<IAnalysis>().Object;
+
+            yield return new object[] { mockComm.Object, mockGroupedAddresses, analyzer };
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    }
+    
     
     
     
     [Theory]
-    [ClassData(CreateMockCommunication(),CreateMockGroupedAddresses(),new Analysis())]
-    public void AnalysisExecutionOK(IGroupCommunication comm,Dictionary<string, List<XElement>> addrDict,IAnalysis analyzer)
+    [ClassData(typeof(AnalysisExecutorTestData))]
+    public async void AnalysisExecutionOK(IGroupCommunication comm,Dictionary<string, List<XElement>> addrDict,IAnalysis analyzer)
     {
         //Arrange
-        AnalysisExecutor executor = new AnalysisExecutor(comm,addrDict,analyzer);
+        IAnalysisExecutor executor = new AnalysisExecutor(comm,addrDict,analyzer);
         
         //Act
-        executor.run();
-        List<Analysis.RecordEntry> results = executor.results();
+
+        List<Analysis.RecordEntry> results = await executor.RunAndGetResults();
+
 
         //Assert
         var expected = new List<Analysis.RecordEntry>
@@ -103,5 +120,27 @@ public class AnalysisExecutorTests
         };
         Assert.Equal(expected,results);
 
+        // var expectedStr = new List<string>
+        // {
+        //     ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "false" + "\nStateAddr = " +
+        //      "1/1/2" + "\nStateVal = " + "true" + "\nTestOK = " + "false" +
+        //      "\n\n"),
+        //     ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "true" + "\nStateAddr = " +
+        //      "1/1/2" + "\nStateVal = " + "true" + "\nTestOK = " + "true" +
+        //      "\n\n"),
+        //
+        //     ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "false" + "\nStateAddr = " +
+        //      "1/1/4" + "\nStateVal = " + "true" + "\nTestOK = " + "false" +
+        //      "\n\n"),
+        //
+        //     ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "true" + "\nStateAddr = " +
+        //      "1/1/4" + "\nStateVal = " + "true" + "\nTestOK = " + "true" +
+        //      "\n\n")
+        // };
+        // Assert.Equal(expectedStr,resultStr);
+
+
     }
+
+    
 }
