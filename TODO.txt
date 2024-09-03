@@ -1,4 +1,4 @@
-Unit test GrpAddrRepo
+Unit test GrpAddrRepo, collection dict differ
 waiting for Communication class
 lier à l'interface de anal
 
