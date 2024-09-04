@@ -1,12 +1,9 @@
-AnalysisExecutorUnitTest
-Integration test of all i have to understand how to use my things
-Interface and implementation of executor
+je fais ma classe executor facile à integrer, avec les tests. Si j'ai le temps je l'intègre au projet.
 
-
-waiting for Communication class
-lier à l'interface de anal
-
-Integration of all components in integration-branch
+executor unit test 1
+executor interface 2
+executor implementation 3
+je fais ni la classe comm ni la dict, on va garder les mocks.
 
 
 

@@ -59,7 +59,7 @@ public class AnalysisExecutorTests
         {
             var mockComm = CreateMockCommunication();
             var mockGroupedAddresses = CreateMockGroupedAddresses();
-            var analyzer = new Mock<IAnalysis>().Object;
+            var analyzer = new Analysis();
 
             yield return new object[] { mockComm.Object, mockGroupedAddresses, analyzer };
         }
@@ -80,6 +80,7 @@ public class AnalysisExecutorTests
         //Act
 
         List<Analysis.RecordEntry> results = await executor.RunAndGetResults();
+        List<string> resultStr = await executor.RunAndGetResultsInString();
 
 
         //Assert
@@ -120,24 +121,32 @@ public class AnalysisExecutorTests
         };
         Assert.Equal(expected,results);
 
-        // var expectedStr = new List<string>
-        // {
-        //     ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "false" + "\nStateAddr = " +
-        //      "1/1/2" + "\nStateVal = " + "true" + "\nTestOK = " + "false" +
-        //      "\n\n"),
-        //     ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "true" + "\nStateAddr = " +
-        //      "1/1/2" + "\nStateVal = " + "true" + "\nTestOK = " + "true" +
-        //      "\n\n"),
-        //
-        //     ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "false" + "\nStateAddr = " +
-        //      "1/1/4" + "\nStateVal = " + "true" + "\nTestOK = " + "false" +
-        //      "\n\n"),
-        //
-        //     ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "true" + "\nStateAddr = " +
-        //      "1/1/4" + "\nStateVal = " + "true" + "\nTestOK = " + "true" +
-        //      "\n\n")
-        // };
-        // Assert.Equal(expectedStr,resultStr);
+        var expectedStr = new List<string>
+        {
+            ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "0" + "\nStateAddr = " +
+             "1/1/2" + "\nStateVal = " + "1" + "\nTestOK = " + "False" +
+             "\n\n"),
+            ("CmdAddr = " + "1/1/1" + "\nCmdVal = " + "1" + "\nStateAddr = " +
+             "1/1/2" + "\nStateVal = " + "1" + "\nTestOK = " + "True" +
+             "\n\n"),
+        
+            ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "0" + "\nStateAddr = " +
+             "1/1/4" + "\nStateVal = " + "1" + "\nTestOK = " + "False" +
+             "\n\n"),
+        
+            ("CmdAddr = " + "1/1/3" + "\nCmdVal = " + "1" + "\nStateAddr = " +
+             "1/1/4" + "\nStateVal = " + "1" + "\nTestOK = " + "True" +
+             "\n\n")
+        };
+        Console.WriteLine($"Expected: {expectedStr}");
+        Console.WriteLine($"Actual: {resultStr}");
+        foreach (var (expectedRecord, resultRecord) in expectedStr.Zip(resultStr, (e, r) => (e, r)))
+        {
+            Assert.Equal(expectedRecord, resultRecord);
+        }
+        Assert.Equal(expectedStr,resultStr);
+
+
 
 
     }

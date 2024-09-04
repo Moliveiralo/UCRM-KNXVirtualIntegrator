@@ -37,4 +37,16 @@ public class AnalysisExecutor : IAnalysisExecutor
         return testTable;
     }
     
+    public async Task<List<string>> RunAndGetResultsInString()
+    {
+        List<Analysis.RecordEntry> testTable = await RunAndGetResults();
+        var testTableInString = new List<string>();
+        foreach (var record in testTable)
+        {
+            testTableInString.Add(record.ToString());
+        }
+        
+        return testTableInString;
+    }
+    
 }
