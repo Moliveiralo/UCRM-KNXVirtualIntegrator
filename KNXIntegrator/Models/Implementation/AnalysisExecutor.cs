@@ -6,13 +6,15 @@ namespace KNXIntegrator.Models;
 public class AnalysisExecutor : IAnalysisExecutor
 {
     private IGroupCommunication _comm;
+    private IGroupAddressManager _addrManager;
     private Dictionary<string, List<XElement>> _grpAddr;
     private IAnalysis _analyzer;
 
-    public AnalysisExecutor(IGroupCommunication comm, Dictionary<string, List<XElement>> grpAddr, IAnalysis analyzer)
+    public AnalysisExecutor(IGroupCommunication comm, IGroupAddressManager addrManager, IAnalysis analyzer)
     {
         _comm = comm;
-        _grpAddr = grpAddr;
+        _addrManager = addrManager;
+        _grpAddr = addrManager.GetGroupedAddrDict();
         _analyzer = analyzer;
     }
 
