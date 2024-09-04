@@ -48,12 +48,8 @@ C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-wi
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.runtimeconfig.json
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.dll
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.pdb
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator_MarkupCompile.cache
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator_MarkupCompile.lref
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.baml
-C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.g.resources
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.AssemblyInfoInputs.cache
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.AssemblyInfo.cs
