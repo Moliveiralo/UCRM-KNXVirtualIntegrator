@@ -37,16 +37,27 @@ public class AnalysisExecutorTests
         return mockGroupedAddresses;
     }
 
+    private static Mock<IGroupAddressManager> CreateMockGroupAddressManager()
+    {
+        var mockAddrManager = new Mock<IGroupAddressManager>();
+        
+        mockAddrManager
+            .Setup(manager => manager.GetGroupedAddrDict())
+            .Returns(CreateMockGroupedAddresses());
+
+        return mockAddrManager;
+    }
+
     private static Mock<IGroupCommunication> CreateMockCommunication()
     {
         var mockComm = new Mock<IGroupCommunication>();
 
         mockComm
-            .Setup(gc => gc.WriteAsync(It.IsAny<(GroupAddress addr, GroupValue val)>()))
+            .Setup(gc => gc.GroupValueWriteAsync(It.IsAny<(GroupAddress addr, GroupValue val)>()))
             .Returns(Task.CompletedTask);
 
         mockComm
-            .Setup(gc => gc.ReadAsync(It.IsAny<GroupAddress>()))
+            .Setup(gc => gc.MaGroupValueReadAsync(It.IsAny<GroupAddress>()))
             .ReturnsAsync(new GroupValue(true));
 
         return mockComm;
@@ -58,10 +69,10 @@ public class AnalysisExecutorTests
         public IEnumerator<object[]> GetEnumerator()
         {
             var mockComm = CreateMockCommunication();
-            var mockGroupedAddresses = CreateMockGroupedAddresses();
+            var mockGroupAddressManager = CreateMockGroupAddressManager();
             var analyzer = new Analysis();
 
-            yield return new object[] { mockComm.Object, mockGroupedAddresses, analyzer };
+            yield return new object[] { mockComm.Object, mockGroupAddressManager.Object, analyzer };
         }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
@@ -72,10 +83,10 @@ public class AnalysisExecutorTests
     
     [Theory]
     [ClassData(typeof(AnalysisExecutorTestData))]
-    public async void AnalysisExecutionOK(IGroupCommunication comm,Dictionary<string, List<XElement>> addrDict,IAnalysis analyzer)
+    public async void AnalysisExecutionOK(IGroupCommunication comm,IGroupAddressManager addrManager,IAnalysis analyzer)
     {
         //Arrange
-        IAnalysisExecutor executor = new AnalysisExecutor(comm,addrDict,analyzer);
+        IAnalysisExecutor executor = new AnalysisExecutor(comm,addrManager,analyzer);
         
         //Act
 

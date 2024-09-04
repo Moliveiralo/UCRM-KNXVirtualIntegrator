@@ -28,8 +28,8 @@ public class AnalysisExecutor : IAnalysisExecutor
                 new GroupAddress(kvp.Value[1].Attribute("Address").Value), 1);
             for (int i = 0; i < records.Count; i++)
             {
-                _comm.WriteAsync((records[i].CmdAddr, records[i].CmdVal));
-                records[i].StateVal = await _comm.ReadAsync(records[i].StateAddr);
+                _comm.GroupValueWriteAsync((records[i].CmdAddr, records[i].CmdVal));
+                records[i].StateVal = await _comm.MaGroupValueReadAsync(records[i].StateAddr);
                 records[i].TestOK = _analyzer.Check(records[i].CmdVal, records[i].StateVal);
             }
 

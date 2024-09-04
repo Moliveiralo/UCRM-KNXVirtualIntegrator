@@ -48,11 +48,11 @@ public class GeneralTestWithMock
         var mockComm = new Mock<IGroupCommunication>();
 
         mockComm
-            .Setup(gc => gc.WriteAsync(It.IsAny<(GroupAddress addr, GroupValue val)>()))
+            .Setup(gc => gc.GroupValueWriteAsync(It.IsAny<(GroupAddress addr, GroupValue val)>()))
             .Returns(Task.CompletedTask);
 
         mockComm
-            .Setup(gc => gc.ReadAsync(It.IsAny<GroupAddress>()))
+            .Setup(gc => gc.MaGroupValueReadAsync(It.IsAny<GroupAddress>()))
             .ReturnsAsync(new GroupValue(true));
 
 
@@ -65,8 +65,8 @@ public class GeneralTestWithMock
                 new GroupAddress(kvp.Value[1].Attribute("Address").Value), 1);
             for (int i = 0; i < records.Count; i++)
             {
-                mockComm.Object.WriteAsync((records[i].CmdAddr, records[i].CmdVal));
-                records[i].StateVal = await mockComm.Object.ReadAsync(records[i].StateAddr);
+                mockComm.Object.GroupValueWriteAsync((records[i].CmdAddr, records[i].CmdVal));
+                records[i].StateVal = await mockComm.Object.MaGroupValueReadAsync(records[i].StateAddr);
                 records[i].TestOK = analyzer.Check(records[i].CmdVal, records[i].StateVal);
             }
 
