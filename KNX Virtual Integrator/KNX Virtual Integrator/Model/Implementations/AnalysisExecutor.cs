@@ -40,7 +40,7 @@ public class AnalysisExecutor : IAnalysisExecutor
         return testTable;
     }
     
-    public async Task<List<string>> RunAndGetResultsInString()
+    public async Task<List<string>> RunAndGetResultsInStringList()
     {
         List<Analysis.RecordEntry> testTable = await RunAndGetResults();
         var testTableInString = new List<string>();
@@ -51,5 +51,16 @@ public class AnalysisExecutor : IAnalysisExecutor
         
         return testTableInString;
     }
-    
+
+    public async Task<string> RunAndGetResultsInString()
+    {
+        List<string> list = await RunAndGetResultsInStringList();
+        string result = "";
+        foreach (string str in list)
+        {
+            result = (result+str);
+        }
+
+        return result;
+    }
 }

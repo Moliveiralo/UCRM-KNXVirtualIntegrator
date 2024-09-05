@@ -18,6 +18,10 @@ public interface IAnalysisExecutor
     
     public Task<List<Analysis.RecordEntry>> RunAndGetResults();
 
-    public Task<List<string>> RunAndGetResultsInString();
+    public Task<string> RunAndGetResultsInString();
+    
+    public Task<List<string>> RunAndGetResultsInStringList();
+    
+    
 
 }

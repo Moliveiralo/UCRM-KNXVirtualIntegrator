@@ -95,7 +95,8 @@ public class AnalysisExecutorTests
         //Act
 
         List<Analysis.RecordEntry> results = await executor.RunAndGetResults();
-        List<string> resultStr = await executor.RunAndGetResultsInString();
+        List<string> resultStr = await executor.RunAndGetResultsInStringList();
+        string resultSingleStr = await executor.RunAndGetResultsInString();
 
 
         //Assert
@@ -153,13 +154,31 @@ public class AnalysisExecutorTests
              "1/1/4" + "\nStateVal = " + "1" + "\nTestOK = " + "True" +
              "\n\n")
         };
-        Console.WriteLine($"Expected: {expectedStr}");
-        Console.WriteLine($"Actual: {resultStr}");
+
         foreach (var (expectedRecord, resultRecord) in expectedStr.Zip(resultStr, (e, r) => (e, r)))
         {
             Assert.Equal(expectedRecord, resultRecord);
         }
         Assert.Equal(expectedStr,resultStr);
+        
+        string expectedSingleStr = 
+            "CmdAddr = " + "1/1/1" + "\nCmdVal = " + "0" + "\nStateAddr = " +
+             "1/1/2" + "\nStateVal = " + "1" + "\nTestOK = " + "False" +
+             "\n\n"+
+            "CmdAddr = " + "1/1/1" + "\nCmdVal = " + "1" + "\nStateAddr = " +
+             "1/1/2" + "\nStateVal = " + "1" + "\nTestOK = " + "True" +
+             "\n\n"+
+        
+            "CmdAddr = " + "1/1/3" + "\nCmdVal = " + "0" + "\nStateAddr = " +
+             "1/1/4" + "\nStateVal = " + "1" + "\nTestOK = " + "False" +
+             "\n\n"+
+        
+            "CmdAddr = " + "1/1/3" + "\nCmdVal = " + "1" + "\nStateAddr = " +
+             "1/1/4" + "\nStateVal = " + "1" + "\nTestOK = " + "True" +
+             "\n\n"
+    ;
+        
+        Assert.Equal(expectedSingleStr,resultSingleStr);
 
 
 

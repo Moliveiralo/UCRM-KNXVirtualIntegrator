@@ -114,6 +114,8 @@ public partial class App
         var groupCommunication = new GroupCommunication(busConnection);
         var parentFinder = new ParentFinder(logger);
         var sliderClickHandler = new SliderClickHandler(logger, parentFinder);
+        var analysis = new Analysis();
+        var analyisExecutor = new AnalysisExecutor(groupCommunication, groupAddressManager, analysis);
 
         // Instancier ModelManager avec les dépendances
         ModelManager = new ModelManager(
@@ -130,7 +132,9 @@ public partial class App
             groupCommunication,
             appSettings, 
             parentFinder,
-            sliderClickHandler);
+            sliderClickHandler,
+            analysis,
+            analyisExecutor);
         
         // Enregistrer un message de démarrage dans la console et le journal
         ModelManager.Logger.ConsoleAndLogWriteLine($"STARTING {AppName.ToUpper()} V{AppVersion.ToString("0.0", CultureInfo.InvariantCulture)} BUILD {AppBuild}...");

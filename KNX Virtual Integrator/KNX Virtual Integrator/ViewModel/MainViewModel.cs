@@ -24,6 +24,7 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
     
     private readonly IBusConnection _busConnection;
     private readonly WindowManager? _windowManager;
+    private readonly IAnalysisExecutor _analysisExecutor;
     
     public IApplicationSettings AppSettings => _modelManager.AppSettings;
     private readonly ModelManager _modelManager;  // Référence à ModelManager
@@ -76,6 +77,7 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
     {
         // Initialisation des attributs
         _modelManager = modelManager;
+        _analysisExecutor = _modelManager.AnalysisExecutor;
         _windowManager = new WindowManager(this);
         _busConnection = _modelManager.BusConnection;
         _busConnection.PropertyChanged += (sender, e) =>
@@ -236,9 +238,9 @@ public class MainViewModel : ObservableObject, INotifyPropertyChanged
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         StartAnalysis = new RelayCommand(
-            () =>
+            async () =>
             {
-                AnalysisResult = PerformAnalysis();
+                AnalysisResult = await _analysisExecutor.RunAndGetResultsInString();
             });
         
         

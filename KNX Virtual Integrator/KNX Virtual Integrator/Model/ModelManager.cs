@@ -16,7 +16,9 @@ namespace KNX_Virtual_Integrator.Model
         IGroupCommunication groupCommunication,
         IApplicationSettings appSettings,
         IParentFinder parentFinder,
-        ISliderClickHandler settingsSliderClickHandler)
+        ISliderClickHandler settingsSliderClickHandler,
+        IAnalysis analysis,
+        IAnalysisExecutor analysisExecutor)
 
     {
     public IFileLoader FileLoader { get; } = fileLoader;
@@ -33,5 +35,9 @@ namespace KNX_Virtual_Integrator.Model
     public IApplicationSettings AppSettings { get; } = appSettings;
     public IParentFinder ParentFinder { get; } = parentFinder;
     public ISliderClickHandler SettingsSliderClickHandler { get; } = settingsSliderClickHandler;
+
+    public IAnalysis Analysis { get; } = analysis;
+
+    public IAnalysisExecutor AnalysisExecutor { get; } = analysisExecutor;
     }
 }
