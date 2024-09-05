@@ -1,1 +1,2 @@
-stable branch of basic prototype of the project. Need to merge to main.
+C'est la branche du projet qui marche (prototype tres simpliste).
+Pour utiliser l'application, se connecter au wifi, se connecter au bus via l'application ( les interfaces prennent du temps avant de sortir), charger le fichier xml (celui formatté avec les bons noms via KNX Boost, tu peux prendre le xml dans le repertoire XmlFiles du projet), cliquer sur Test Anal Daichi (c'est nathan qui a mis le nom) et Lancer Analyse. Bonne chance !
