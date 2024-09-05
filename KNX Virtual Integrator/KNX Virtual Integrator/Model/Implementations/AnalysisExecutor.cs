@@ -24,6 +24,11 @@ public class AnalysisExecutor : IAnalysisExecutor
         var testTable = new List<Analysis.RecordEntry>();
         foreach (var kvp in _grpAddr)
         {
+                    if (kvp.Value.Count < 2)
+                    {
+                        // Log or handle the error
+                        continue; // Skip this entry
+                    }
             List<Analysis.RecordEntry> records = _analyzer.GetRecords(
                 new GroupAddress(kvp.Value[0].Attribute("Address").Value),
                 new GroupAddress(kvp.Value[1].Attribute("Address").Value), 1);
