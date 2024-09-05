@@ -7,6 +7,9 @@ namespace KNX_Virtual_Integrator.Model.Interfaces;
 /// </summary>
 public interface IGroupAddressManager
 {
+    public Dictionary<string, List<XElement>> GetGroupedAddrDict();
+    
+    
     /// <summary>
     /// Extracts group address information from a specified XML file.
     ///

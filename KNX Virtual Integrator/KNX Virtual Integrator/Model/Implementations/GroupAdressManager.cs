@@ -12,6 +12,11 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
     private readonly Dictionary<string, List<XElement>> _groupedAddresses = new ();
     private readonly List<XElement> _ieAddressesSet = new();
 
+    public Dictionary<string, List<XElement>> GetGroupedAddrDict()
+    {
+        return _groupedAddresses;
+    }
+
     /// <summary>
     /// Extracts group address information from a specified XML file.
     ///
