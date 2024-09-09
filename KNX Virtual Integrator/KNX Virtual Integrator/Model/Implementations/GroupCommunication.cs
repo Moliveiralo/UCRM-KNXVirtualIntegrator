@@ -7,7 +7,7 @@ using Knx.Falcon.Sdk;
 
 
 namespace KNX_Virtual_Integrator.Model.Implementations;
-
+//test
 public class GroupCommunication : ObservableObject, IGroupCommunication
 {
 
