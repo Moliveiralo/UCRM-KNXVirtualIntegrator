@@ -1,0 +1,25 @@
+[05/09/2024 - 14:50:49] STARTING KNX VIRTUAL INTEGRATOR V1.1 BUILD 100...
+[05/09/2024 - 14:50:49] Opening main window
+[05/09/2024 - 14:50:49] MainWindow.UpdateWindowContents is not implemented
+[05/09/2024 - 14:50:50] Trying to archive log files
+[05/09/2024 - 14:50:50] --> Not enough log files to archive.
+[05/09/2024 - 14:50:50] Starting to remove folders from projects extracted last time
+[05/09/2024 - 14:50:50] --> No folder or zip file to delete
+[05/09/2024 - 14:50:50] KNX VIRTUAL INTEGRATOR APP STARTED !
+[05/09/2024 - 14:50:50] -----------------------------------------------------------
+[05/09/2024 - 14:51:02] Waiting for user to select group addresses file
+[05/09/2024 - 14:51:28] File selected: C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\XmlFiles\UpdatedGroupAddresses - MCP original.xml
+[05/09/2024 - 14:51:28] Extracting UpdatedGroupAddresses - MCP original.xml...
+[05/09/2024 - 14:51:28] Done! Copy the file: C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\XmlFiles\UpdatedGroupAddresses - MCP original.xml
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/0'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/0'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/0'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/1'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/1'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/1'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/2'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/2'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/2'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/3'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/3'.
+[05/09/2024 - 14:51:28] Adding 'Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt' from IeAddressesSet to single-element group '_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt_2/3/3'.

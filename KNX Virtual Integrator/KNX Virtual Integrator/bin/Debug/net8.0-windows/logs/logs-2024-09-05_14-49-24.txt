@@ -1,0 +1,57 @@
+[05/09/2024 - 14:49:24] STARTING KNX VIRTUAL INTEGRATOR V1.1 BUILD 100...
+[05/09/2024 - 14:49:24] Opening main window
+[05/09/2024 - 14:49:24] MainWindow.UpdateWindowContents is not implemented
+[05/09/2024 - 14:49:25] Trying to archive log files
+[05/09/2024 - 14:49:25] --> Not enough log files to archive.
+[05/09/2024 - 14:49:25] Starting to remove folders from projects extracted last time
+[05/09/2024 - 14:49:25] --> No folder or zip file to delete
+[05/09/2024 - 14:49:25] KNX VIRTUAL INTEGRATOR APP STARTED !
+[05/09/2024 - 14:49:25] -----------------------------------------------------------
+[05/09/2024 - 14:49:36] Waiting for user to select group addresses file
+[05/09/2024 - 14:49:47] File selected: C:\Users\lison\Documents\STAGE UCRM\UpdatedGroupAddresses- Drivon.xml
+[05/09/2024 - 14:49:47] Extracting UpdatedGroupAddresses- Drivon.xml...
+[05/09/2024 - 14:49:47] ./UpdatedGroupAddresses- Drivon.xml already exists. Removing the file before creating the new archive.
+[05/09/2024 - 14:49:47] Done! Copy the file: C:\Users\lison\Documents\STAGE UCRM\UpdatedGroupAddresses- Drivon.xml
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2_6/0/14'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2_6/0/14'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E11' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2_6/0/14'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2_6/0/14'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2_6/0/14'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6_6/0/27'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6_6/0/28'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6_6/0/29'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5' from IeAddressesSet to single-element group '_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6_6/0/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/18'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5_6/2/21'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1_6/4/7'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:48] Adding 'Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5' from IeAddressesSet to single-element group '_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6_6/4/30'.
+[05/09/2024 - 14:49:49] Adding 'Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal' from IeAddressesSet to single-element group '_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_9/0/123'.
+[05/09/2024 - 14:49:49] Adding 'Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal' from IeAddressesSet to single-element group '_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_9/0/124'.

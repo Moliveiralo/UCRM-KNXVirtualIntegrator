@@ -1,0 +1,58 @@
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.csproj.AssemblyReference.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\ConnectionWindow.baml
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\SettingsWindow.baml
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\App.baml
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\ConnectionWindow.g.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\MainWindow.g.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\SettingsWindow.g.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator_MarkupCompile.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator_MarkupCompile.lref
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\KNX Virtual Integrator.exe
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\KNX Virtual Integrator.deps.json
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\KNX Virtual Integrator.runtimeconfig.json
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\KNX Virtual Integrator.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\KNX Virtual Integrator.pdb
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\CommonServiceLocator.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\ControlzEx.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Knx.Falcon.ApplicationData.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Knx.Falcon.Sdk.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Knx.Falcon.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\log4net.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\MahApps.Metro.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\GalaSoft.MvvmLight.Extras.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\GalaSoft.MvvmLight.Platform.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\GalaSoft.MvvmLight.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\System.Windows.Interactivity.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\System.CodeDom.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\MainWindow.baml
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.g.resources
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.AssemblyInfoInputs.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.AssemblyInfo.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.csproj.CoreCompileInputs.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.sourcelink.json
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virt.B735446C.Up2Date
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\refint\KNX Virtual Integrator.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.pdb
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\KNX Virtual Integrator.genruntimeconfig.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\ref\KNX Virtual Integrator.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\TESTANALYSE.g.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\View\Windows\TESTANALYSE.baml

@@ -1,0 +1,20 @@
+﻿KNX Virtual Integrator
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\obj\Debug\net8.0-windows\
+KNX_Virtual_Integrator
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNX Virtual Integrator\KNX Virtual Integrator\App.xaml
+51763820744
+
+65117147592
+2151175813883
+Resources\Colors.xaml;View\Windows\ConnectionWindow.xaml;View\Windows\MainWindow.xaml;View\Windows\ReportCreationWindow.xaml;View\Windows\SettingsWindow.xaml;
+
+True
+

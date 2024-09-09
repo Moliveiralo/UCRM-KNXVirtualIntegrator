@@ -1,0 +1,12 @@
+[04/09/2024 - 11:16:49] STARTING KNX VIRTUAL INTEGRATOR V1.2 BUILD 104...
+[04/09/2024 - 11:16:50] Opening main window
+[04/09/2024 - 11:16:50] MainWindow.UpdateWindowContents is not implemented
+[04/09/2024 - 11:16:51] Trying to archive log files
+[04/09/2024 - 11:16:51] --> Not enough log files to archive.
+[04/09/2024 - 11:16:51] Starting to remove folders from projects extracted last time
+[04/09/2024 - 11:16:51] --> No folder or zip file to delete
+[04/09/2024 - 11:16:51] KNX VIRTUAL INTEGRATOR APP STARTED !
+[04/09/2024 - 11:16:51] -----------------------------------------------------------
+[04/09/2024 - 11:17:12] -----------------------------------------------------------
+[04/09/2024 - 11:17:12] CLOSING KNX VIRTUAL INTEGRATOR APP...
+[04/09/2024 - 11:17:12] KNX VIRTUAL INTEGRATOR APP CLOSED !

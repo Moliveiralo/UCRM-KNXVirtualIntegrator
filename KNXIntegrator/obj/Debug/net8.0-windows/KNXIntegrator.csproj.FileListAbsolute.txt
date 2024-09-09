@@ -20,12 +20,8 @@ c:\Users\Daichi\Documents\ucrm\KNXIntegrator\KNXIntegrator\obj\Debug\net8.0-wind
 c:\Users\Daichi\Documents\ucrm\KNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
 c:\Users\Daichi\Documents\ucrm\KNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\SimpleWindow.g.cs
 c:\Users\Daichi\Documents\ucrm\KNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.baml
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\SimpleWindow.baml
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\SimpleWindow.g.cs
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator_MarkupCompile.cache
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator_MarkupCompile.lref
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.dll
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\refint\KNXIntegrator.dll
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.pdb
@@ -34,8 +30,6 @@ C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debu
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.runtimeconfig.json
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.dll
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\KNXIntegrator.pdb
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\Views\MainWindow.baml
-C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.g.resources
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.AssemblyInfoInputs.cache
 C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.AssemblyInfo.cs
@@ -67,3 +61,10 @@ C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-wi
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\log4net.dll
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Daichi\Documents\ucrm\MyKNXIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXInteg.32E26E9D.Up2Date
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\Knx.Falcon.ApplicationData.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\Knx.Falcon.Sdk.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\Knx.Falcon.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\log4net.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXIntegrator.csproj.AssemblyReference.cache
+C:\Users\lison\Documents\GitHub\UCRM-KNXVirtualIntegrator\KNXIntegrator\obj\Debug\net8.0-windows\KNXInteg.32E26E9D.Up2Date

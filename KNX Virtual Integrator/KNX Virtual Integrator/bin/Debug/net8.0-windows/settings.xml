@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EnableLightTheme>true</EnableLightTheme>
+  <AppLang>FR</AppLang>
+  <AppScaleFactor>100</AppScaleFactor>
+</ApplicationSettings>

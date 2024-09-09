@@ -1,0 +1,17 @@
+[05/09/2024 - 14:09:45] STARTING KNX VIRTUAL INTEGRATOR V1.1 BUILD 99...
+[05/09/2024 - 14:09:46] Opening main window
+[05/09/2024 - 14:09:46] MainWindow.UpdateWindowContents is not implemented
+[05/09/2024 - 14:09:47] Trying to archive log files
+[05/09/2024 - 14:09:47] --> Not enough log files to archive.
+[05/09/2024 - 14:09:47] Starting to remove folders from projects extracted last time
+[05/09/2024 - 14:09:47] --> No folder or zip file to delete
+[05/09/2024 - 14:09:47] KNX VIRTUAL INTEGRATOR APP STARTED !
+[05/09/2024 - 14:09:47] -----------------------------------------------------------
+[05/09/2024 - 14:10:09] Waiting for user to select KNX project file
+[05/09/2024 - 14:10:13] User aborted the file selection operation
+[05/09/2024 - 14:10:13] Directory  does not exist.
+[05/09/2024 - 14:10:13] Unable to find the file '0.xml' in the project folders. Please ensure that the extracted archive is indeed a KNX ETS project.
+[05/09/2024 - 14:10:13] Error loading XML: The value cannot be an empty string. (Parameter 'inputUri')
+[05/09/2024 - 14:10:13] -----------------------------------------------------------
+[05/09/2024 - 14:10:13] CLOSING KNX VIRTUAL INTEGRATOR APP...
+[05/09/2024 - 14:10:13] KNX VIRTUAL INTEGRATOR APP CLOSED !

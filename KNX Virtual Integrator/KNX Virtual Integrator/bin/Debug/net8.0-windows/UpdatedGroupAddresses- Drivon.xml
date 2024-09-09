@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<GroupAddress-Export xmlns="http://knx.org/xml/ga-export/01">
+  <GroupRange Name="Systeme" RangeStart="1" RangeEnd="2047">
+    <GroupRange Name="Systeme" RangeStart="1" RangeEnd="255">
+      <GroupAddress Name="Cmd_Systeme_Systeme_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="0/0/8" DPTs="DPST-11-1" />
+      <GroupAddress Name="Cmd_Systeme_Systeme_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="0/0/9" DPTs="DPST-10-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Prises de courant - alim." RangeStart="4096" RangeEnd="6143">
+    <GroupRange Name="CMD ON/OFF PC" RangeStart="4096" RangeEnd="4351">
+      <GroupAddress Name="*CMD ON/OFF PC cdée" Address="2/0/0" />
+      <GroupAddress Name="Cmd_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="2/0/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="2/0/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="2/0/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="2/0/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="2/0/5" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="IE ON/OFF PC" RangeStart="4352" RangeEnd="4607">
+      <GroupAddress Name="*IE ON/OFF PC cdée" Address="2/1/0" />
+      <GroupAddress Name="Ie_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="2/1/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="2/1/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="2/1/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="2/1/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_PrisesDeCourantAlim_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="2/1/5" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Programmation" RangeStart="8192" RangeEnd="10239">
+    <GroupRange Name="Eclairage" RangeStart="9728" RangeEnd="9983">
+      <GroupAddress Name="*Prog_ECL_" Address="4/6/0" />
+      <GroupAddress Name="*Prog_ECL_" Address="4/6/1" DPTs="DPST-20-102" />
+    </GroupRange>
+    <GroupRange Name="Chauffage" RangeStart="8960" RangeEnd="9215">
+      <GroupAddress Name="*Prog_Mode_" Address="4/3/0" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Eclairage" RangeStart="12288" RangeEnd="14335">
+    <GroupRange Name="Cde ON/OFF" RangeStart="12288" RangeEnd="12543">
+      <GroupAddress Name="*CMD ON/OFF ECL" Address="6/0/0" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Garage_E3" Address="6/0/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E3" Address="6/0/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Cellier_E3" Address="6/0/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Buanderie_E3" Address="6/0/5" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Cuisine_E1" Address="6/0/6" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/0/8" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/0/9" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/0/10" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree_E2" Address="6/0/11" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree" Address="6/0/12" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree_E2" Address="6/0/13" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/0/14" DPTs="DPST-1-1" />
+      <GroupAddress Name="*CMD ON/OFF ECL_RdC_Ch_Amis_E2" Address="6/0/15" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/0/16" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Garage_E3" Address="6/0/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/0/17" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Cuisine_E1" Address="6/0/7" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/0/18" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/0/20" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/0/21" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5" Address="6/0/22" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/0/23" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/0/24" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/0/25" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/0/26" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/0/27" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/0/28" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/0/31" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/0/32" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/0/33" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/0/34" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/0/35" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Sdb_E4" Address="6/0/36" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Sdb_E4" Address="6/0/37" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/0/29" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/0/30" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/0/40" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/0/41" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Dgt_E5" Address="6/0/42" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/0/45" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12" Address="6/0/100" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E11" Address="6/0/101" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12" Address="6/0/102" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_LocalTechPiscine" Address="6/0/103" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/0/19" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_LectureCombles_E5" Address="6/0/44" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/0/50" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="Info d'etat ON/OFF" RangeStart="12544" RangeEnd="12799">
+      <GroupAddress Name="*IE ON/OFF ECL" Address="6/1/0" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E3" Address="6/1/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Garage_E3" Address="6/1/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E3" Address="6/1/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Cellier_E3" Address="6/1/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Buanderie_E3" Address="6/1/5" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/1/6" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/1/7" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/1/8" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/1/9" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/1/10" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree_E2" Address="6/1/11" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree" Address="6/1/12" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/1/13" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_ChAmisTv_E2" Address="6/1/14" DPTs="DPST-1-1" />
+      <GroupAddress Name="*IE ON/OFF ECL_RdC_Ch_Amis_E2" Address="6/1/15" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/1/16" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/1/17" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/1/18" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/1/19" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/1/20" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/1/21" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E5" Address="6/1/22" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/1/23" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/1/24" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/1/25" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/1/26" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/1/27" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/1/28" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/1/29" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/1/30" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/1/31" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/1/32" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/1/33" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/1/34" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/1/35" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Sdb_E4" Address="6/1/36" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Sdb_E4" Address="6/1/37" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/1/40" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/1/41" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_R1_Dgt_E5" Address="6/1/42" DPTs="DPST-1-1" />
+      <GroupAddress Name="*IE ON/OFF ECL_R+2_Combles_escalier_E5" Address="6/1/43" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/1/45" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12" Address="6/1/100" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E11" Address="6/1/101" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E12" Address="6/1/102" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/1/103" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Combles_LectureCombles_E5" Address="6/1/44" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="6/1/50" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="Variation" RangeStart="12800" RangeEnd="13055">
+      <GroupAddress Name="*CMD VAR ECL" Address="6/2/0" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Cuisine_E1" Address="6/2/7" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/2/8" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/2/9" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree_E2" Address="6/2/11" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/2/14" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/2/16" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/2/17" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/2/18" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/2/20" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E5" Address="6/2/21" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/2/23" DPTs="DPST-3-7" />
+      <GroupAddress Name="*CMD VAR ECL_R+1_Ch1_Bureau_E4" Address="6/2/24" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/2/25" DPTs="DPST-3-7" />
+      <GroupAddress Name="*CMD VAR ECL_R+1_Ch2_Bureau_E4" Address="6/2/26" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/2/27" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/2/28" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/2/29" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/2/30" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau_E6" Address="6/2/32" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/2/40" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/2/41" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Dgt_E5" Address="6/2/42" DPTs="DPST-3-7" />
+      <GroupAddress Name="*CMD VAR ECL_R+2_Combles_escalier_E5" Address="6/2/43" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_LectureCombles_E5" Address="6/2/44" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/2/50" DPTs="DPST-3-7" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Entree_E2" Address="6/2/13" DPTs="DPST-3-7" />
+    </GroupRange>
+    <GroupRange Name="Valeur variation" RangeStart="13312" RangeEnd="13567">
+      <GroupAddress Name="*CMD % ECL" Address="6/4/0" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Dgt_E1" Address="6/4/7" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/4/8" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/4/9" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/4/11" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/4/14" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % ECL_RdC_Ch_Amis_E2" Address="6/4/15" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/4/16" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/4/17" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/4/18" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/4/20" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/4/21" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/4/23" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % ECL_R+1_Ch1_Bureau_E4" Address="6/4/24" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/4/25" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % ECL_R+1_Ch2_Bureau_E4" Address="6/4/26" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/4/27" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/4/28" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/4/29" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E6" Address="6/4/30" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/4/32" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/4/40" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/4/41" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/4/42" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % ECL_R+2_Combles_escalier_E5" Address="6/4/43" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/4/44" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/4/50" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/4/13" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="Info d'etat variation" RangeStart="13568" RangeEnd="13823">
+      <GroupAddress Name="*IE % VAR ECL" Address="6/5/0" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/5/7" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E1" Address="6/5/8" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/5/9" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/5/11" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E2" Address="6/5/14" DPTs="DPST-5-1" />
+      <GroupAddress Name="*IE % VAR ECL_RdC_Ch_Amis_E2" Address="6/5/15" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/5/16" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour_E1" Address="6/5/17" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/5/18" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/5/20" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/5/21" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_E4" Address="6/5/23" DPTs="DPST-5-1" />
+      <GroupAddress Name="*IE % VAR ECL_R+1_Ch1_Bureau_E4" Address="6/5/24" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_E4" Address="6/5/25" DPTs="DPST-5-1" />
+      <GroupAddress Name="*IE % VAR ECL_R+1_Ch2_Bureau_E4" Address="6/5/26" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/5/27" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/5/28" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/5/29" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/5/30" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/5/32" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/5/40" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E4" Address="6/5/41" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/5/42" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages_E5" Address="6/5/44" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/5/50" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_Eclairage_Variation_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_E2" Address="6/5/13" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="Ordres Generaux / Scenario" RangeStart="13824" RangeEnd="14079">
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/6/0" DPTs="DPST-17-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_Garage" Address="6/6/100" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau" Address="6/6/132" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="6/6/130" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1_ch1" Address="6/6/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2_ch2" Address="6/6/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/6/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="6/6/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/6/5" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="6/6/200" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="6/6/101" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OrdresGenerauxScenario_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="6/6/105" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="DP" RangeStart="14080" RangeEnd="14335">
+      <GroupAddress Name="Cmd_Eclairage_Dp_Di158KDrivonRobertsau_FacadeXx_Rdc_Garage_E3" Address="6/7/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_Dp_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale_E6" Address="6/7/31" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Ouvrants Motorises" RangeStart="18432" RangeEnd="20479">
+    <GroupRange Name="CMD Montee/Descente" RangeStart="18432" RangeEnd="18687">
+      <GroupAddress Name="*CMD MO_DE" Address="9/0/0" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/1" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/2" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/3" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/4" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/5" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/0/6" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/0/7" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau" Address="9/0/8" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/0/9" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/0/10" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/0/11" DPTs="DPST-1-8" />
+      <GroupAddress Name="*CMD MO_DE_SI_Dgt_cote_Jardin" Address="9/0/36" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau" Address="9/0/38" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/0/39" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/0/40" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/0/41" DPTs="DPST-1-8" />
+      <GroupAddress Name="*CMD MO_DE_" Address="9/0/15" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/0/110" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/0/111" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/0/112" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/101" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/113" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/114" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/115" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/0/123" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/0/124" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/125" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/102" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_MonteeDescente_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/0/223" DPTs="DPST-1-8" />
+    </GroupRange>
+    <GroupRange Name="CMD Inclinaison/Stop" RangeStart="18688" RangeEnd="18943">
+      <GroupAddress Name="*CMD_Incl_Stop" Address="9/1/0" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/1" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/2" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/3" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/4" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/5" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/1/6" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/1/7" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau" Address="9/1/8" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/1/9" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/1/10" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/1/11" DPTs="DPST-1-7" />
+      <GroupAddress Name="*CMD_Incl_Stop_SI_Dgt_cote_Jardin" Address="9/1/36" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_SalleEau" Address="9/1/38" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/1/39" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/1/40" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/1/41" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/1/110" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/1/111" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/1/112" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/113" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/114" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/125" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/1/123" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/1/124" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/115" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/102" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/1/101" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_InclinaisonStop_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/1/223" DPTs="DPST-1-7" />
+    </GroupRange>
+    <GroupRange Name="Automatismes" RangeStart="18944" RangeEnd="19199">
+      <GroupAddress Name="*Automatismes" Address="9/2/0" />
+    </GroupRange>
+    <GroupRange Name="CMD % Hauteur" RangeStart="19200" RangeEnd="19455">
+      <GroupAddress Name="*CMD % Hauteur" Address="9/3/0" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/1" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/2" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/3" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/4" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/5" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/3/6" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/3/7" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/3/8" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/3/9" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/3/10" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/3/11" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % Hauteur_SI_Dgt_cote_Jardin" Address="9/3/36" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/3/38" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/3/39" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/3/40" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/3/41" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/3/110" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/3/111" DPTs="DPST-5-1" />
+      <GroupAddress Name="*CMD % Hauteur_Velux_combles" Address="9/3/112" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/113" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/114" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/125" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/3/123" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/3/124" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/115" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/3/223" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="IE % hauteur" RangeStart="19456" RangeEnd="19711">
+      <GroupAddress Name="*IE % hauteur" Address="9/4/0" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/1" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/2" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/3" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/4" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/5" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/4/6" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/4/7" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/4/8" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/4/9" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/4/10" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/4/11" DPTs="DPST-5-1" />
+      <GroupAddress Name="*IE % Hauteur_SI_Dgt_cote_Jardin" Address="9/4/36" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/4/38" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_ChParentale" Address="9/4/39" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/4/40" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/4/41" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre1" Address="9/4/110" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_R1_Chambre2" Address="9/4/111" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Combles_Grenier_CoffretEtages" Address="9/4/112" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/113" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/114" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/115" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/123" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal" Address="9/4/124" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_OuvrantsMotorises_PourcentageHauteur_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="9/4/125" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="IE % lamelles" RangeStart="19712" RangeEnd="19967">
+      <GroupAddress Name="*IE % lamelles" Address="9/5/0" />
+    </GroupRange>
+    <GroupRange Name="IE haut/bas" RangeStart="19968" RangeEnd="20223">
+      <GroupAddress Name="*IE haut/bas" Address="9/6/0" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Station meteo" RangeStart="20480" RangeEnd="22527">
+    <GroupRange Name="Station standard" RangeStart="20480" RangeEnd="20735">
+      <GroupAddress Name="*Date" Address="10/0/1" />
+      <GroupAddress Name="*Heure" Address="10/0/2" />
+      <GroupAddress Name="Ie_StationMeteo_StationStandard_Vent vitesse" Address="10/0/11" DPTs="DPT-9" />
+      <GroupAddress Name="Ie_StationMeteo_StationStandard_Temperature" Address="10/0/13" DPTs="DPST-9-1" />
+      <GroupAddress Name="Cmd_StationMeteo_StationStandard_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_1bit" Address="10/0/15" DPTs="DPST-1-1" />
+      <GroupAddress Name="*Crepuscule" Address="10/0/26" />
+      <GroupAddress Name="Cmd_StationMeteo_StationStandard_Di158KDrivonRobertsau_FacadeXx_Rdc_RangementSousEscalier_CoffretPrincipal_72km/h" Address="10/0/30" DPTs="DPST-1-5" />
+      <GroupAddress Name="*Seuil Temp." Address="10/0/32" />
+      <GroupAddress Name="*Securite gel" Address="10/0/34" DPTs="DPST-1-1" />
+      <GroupAddress Name="*Defaut sonde Vent" Address="10/0/91" />
+      <GroupAddress Name="Ie_StationMeteo_StationStandard_Defaut sonde Temperature" Address="10/0/97" DPTs="DPST-1-1" />
+      <GroupAddress Name="*Defaut sonde Pluie" Address="10/0/98" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Supervision" RangeStart="22528" RangeEnd="24575">
+    <GroupRange Name="Infos" RangeStart="22528" RangeEnd="22783">
+      <GroupAddress Name="Ie_Supervision_Infos_Di158KDrivonRobertsau_FacadeXx_Rdc_Sejour" Address="11/0/70" DPTs="DPST-9-1" />
+    </GroupRange>
+  </GroupRange>
+</GroupAddress-Export>
