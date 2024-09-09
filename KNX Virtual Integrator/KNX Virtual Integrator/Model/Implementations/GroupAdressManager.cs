@@ -86,7 +86,10 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
             var id = ga.Attribute("Id")?.Value;
             var name = ga.Attribute("Name")?.Value;
             // Convert the address to the x/x/x format (depending on the groupAddressStructure)
-            var address = groupAddressProcessor.DecodeAddress(ga.Attribute("Address")?.Value ?? string.Empty, groupAddressStructure); 
+            var address = groupAddressProcessor.DecodeAddress(ga.Attribute("Address")?.Value ?? string.Empty, groupAddressStructure);
+            
+            // Extraire DPTs
+            //var dpts = ga.Attribute("DPTs")?.Value;
 
             if (address != String.Empty)
             {
@@ -138,6 +141,12 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
                         _ieAddressesSet.Add(ga);
                     }
                 }
+
+                // Ajouter les DPTs aux éléments
+                /*if (dpts != null)
+                {
+                    ga.SetAttributeValue("DPTs", dpts);
+                }*/
             }
         }
 
@@ -219,8 +228,18 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
         {
             var name = ga.Attribute("Name")?.Value;
             var address = ga.Attribute("Address")?.Value;
+            //DPTs
+            //var dpts = ga.Attribute("DPTs")?.Value;
+
+
             if (name != null && address != null)
             {
+                //DPTs
+                /*if (dpts != null)
+                {
+                    ga.SetAttributeValue("DPTs", dpts);
+                }*/
+
                 if (name.StartsWith("Ie", StringComparison.OrdinalIgnoreCase))
                 {
                     var suffix = name.Substring(2);
@@ -257,6 +276,7 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
             foreach (var cmd in cmds)
             {
                 var address = cmd.Attribute("Address")?.Value;
+                var dpts = cmd.Attribute("DPTs")?.Value;
                 if (address != null)
                 {
                     if (!addedCmdAddresses.ContainsKey(suffix))
@@ -272,18 +292,18 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
                         if (ieAddresses.ContainsKey(suffix))
                         {
                             groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
-                                $"{suffix}_{address}"); // Ajouter l'adresse "Cmd"
+                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
                             // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
                             foreach (var ieGa in ieAddresses[suffix])
                             {
                                 groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
-                                    $"{suffix}_{address}"); // Ajouter les adresses "Ie"
+                                    $"{suffix}_{address}_{dpts}"); // Ajouter les adresses "Ie"
                             }
                         }
                         else
                         {
                             // Si aucune adresse "Ie" ne correspond, on ajoute uniquement l'adresse "Cmd"
-                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}");
+                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}_{dpts}");
                         }
                     }
                 }

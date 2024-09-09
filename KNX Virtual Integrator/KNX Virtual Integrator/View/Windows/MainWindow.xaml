@@ -178,7 +178,7 @@
                     Foreground="Red" Background="Yellow"
                     BorderThickness="3" BorderBrush="Aqua"/>
             <Button Content="Exporter le rapport" Width="150" Margin="5"/>
-            <Button Content="TEST ANAL DAICHI" Width="150" Margin="5"
+            <Button Content="TEST final" Width="150" Margin="5"
                     Command="{Binding OpenAnal}"/>
 
         </StackPanel>

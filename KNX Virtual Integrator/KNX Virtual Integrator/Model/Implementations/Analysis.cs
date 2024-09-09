@@ -30,7 +30,7 @@ public class Analysis : IAnalysis
         ret.Add(new RecordEntry
         {
             CmdAddr = cmdAddr,
-            CmdVal = Converter.IntToGroupValue(0, cmdSizeInBit),
+            CmdVal = Converter.IntToGroupValue(0, cmdSizeInBit), //valeur 0
             StateAddr = stateAddr,
             StateVal = null,
             TestOK = null
@@ -38,7 +38,7 @@ public class Analysis : IAnalysis
         ret.Add(new RecordEntry
         {
             CmdAddr = cmdAddr,
-            CmdVal = Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdSizeInBit) - 1), cmdSizeInBit),
+            CmdVal = Converter.IntToGroupValue(((int)Math.Pow(2.0, (double)cmdSizeInBit) - 1), cmdSizeInBit), //valeur max
             StateAddr = stateAddr,
             StateVal = null,
             TestOK = null
