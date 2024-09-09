@@ -46,6 +46,7 @@ public class Analysis : IAnalysis
         return ret;
     }
 
+    //Le check est pas bon = pas la bonne logique
     public bool Check(GroupValue cmdValue, GroupValue stateValue)
     {
         return Equals(cmdValue, stateValue);
