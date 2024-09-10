@@ -140,76 +140,80 @@
     <Grid>
         <!-- Define columns with GridSplitter for resizing -->
         <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="263*" />
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="91*" />
-            <ColumnDefinition Width="173*"/>
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="263*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+ 
         </Grid.ColumnDefinitions> -->
 
         <!-- Define rows for buttons and content -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="111" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+            <!-- Row for Buttons -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for View -->
+            <RowDefinition Height="*"/>
+       </Grid.RowDefinitions>
 
 
 
         <!-- Buttons at the top -->
-        <StackPanel Orientation="Horizontal" Margin="5,5,0,55">
-            <Button Margin="5" 
-                    Command="{Binding OpenConnectionWindowCommand}"
-                    Style="{StaticResource ConnectButton}" Click="Button_Click"/>
+        <GroupBox Header="Les Boutons" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" Margin="5,5,0,0">
+                <Button Margin="5" 
+                            Command="{Binding OpenConnectionWindowCommand}"
+                            Style="{StaticResource ConnectButton}" Click="Button_Click"/>
 
 
-            <Button x:Name="ButtonChargerProject"
-                    Margin="5"
-                    Width="100"
-                    Click="ImportProjectButtonClick"
-                    Content="Charger Projet" />
+                <Button x:Name="ButtonChargerProject"
+                            Margin="5"
+                            Width="100"
+                            Click="ImportProjectButtonClick"
+                            Content="Charger Projet" />
 
-            <!-- Deuxième bouton dans la deuxième ligne -->
-            <Button x:Name="ButtonChargerGroupAddressesXml"
-                Margin="5"
-                Width="150"
-                Click="ImportGroupAddressFileButtonClick"
-                Content="Charger Fichier Xml"
-                Background="{StaticResource KnxGreen}" 
-                BorderThickness="3"
-                />
+                <!-- Deuxième bouton dans la deuxième ligne -->
+                <Button x:Name="ButtonChargerGroupAddressesXml"
+                        Margin="5"
+                        Width="150"
+                        Click="ImportGroupAddressFileButtonClick"
+                        Content="Charger Fichier Xml"
+                        Background="{StaticResource KnxGreen}" 
+                        BorderThickness="3"
+                        />
 
-            <Button Content="LIER ADDRESS MODEL" 
-                Margin="5"
-                Width="150"
-                Background="{StaticResource KnxGreen}" 
-                Foreground="White" 
-                BorderThickness="3"
-                Command="{Binding LinkAdMod}"/>
-
-
-            <Button Content="Lancer le test" Width="100" Margin="5" 
-                     BorderThickness="3" />
-
-            <Button Content="Exporter le rapport" Width="125" Margin="5"/>
-
-            <Button Content="TEST final" Background="{StaticResource KnxGreen}"  BorderThickness="3" 
-                    Width="75" Margin="5"
-                    Command="{Binding OpenAnal}"/>
-
-        </StackPanel>
+                <Button Content="LIER ADDRESS MODEL" 
+                        Margin="5"
+                        Width="150"
+                        Background="{StaticResource KnxGreen}" 
+                        Foreground="White" 
+                        BorderThickness="3"
+                        Command="{Binding LinkAdMod}"/>
 
 
-        <!-- StackPanel for LinkAdModResult -->
-        <StackPanel Grid.Row="1" Margin="5,5,5,5">
-            <ScrollViewer MaxHeight="1000" Height="252" Width="658">
-                <TextBlock x:Name="DisplayTextBlock" 
-                       Text="{Binding LinkAdModResult, Mode=OneWay}" 
-                       FontSize="16"
-                       Background="White"
-                       TextWrapping="Wrap" Height="199"/>
+                <Button Content="Lancer le test" Width="100" Margin="5" 
+                             BorderThickness="3" />
+
+                <Button Content="Exporter le rapport" Width="125" Margin="5"/>
+
+                <Button Content="TEST final" Background="{StaticResource KnxGreen}"  BorderThickness="3" 
+                            Width="75" Margin="5"
+                            Command="{Binding OpenAnal}"/>
+
+            </StackPanel>
+        </GroupBox>
+
+        <!-- View for LinkAdModResult -->
+        <GroupBox Header="Le lien Address et Model" Grid.Row="1" >
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollBarVisibility="Auto"
+                      Height="500" Width="700">
+                <StackPanel>
+                    <TextBlock x:Name="DisplayTextBlock" 
+                           Text="{Binding LinkAdModResult, Mode=OneWay}" 
+                           FontSize="12"
+                           Background="White"
+                           TextWrapping="Wrap"/>
+                </StackPanel>
             </ScrollViewer>
-        </StackPanel>
+        </GroupBox>
 
 
 

@@ -280,5 +280,8 @@ public partial class MainWindow
 
     }
 
-    
+    private void GroupAddressListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+    {
+
+    }
 }
