@@ -21,6 +21,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Windows;
 using KNX_Virtual_Integrator.Model;
+using KNX_Virtual_Integrator.Model.Entities;
 using KNX_Virtual_Integrator.Model.Implementations;
 using KNX_Virtual_Integrator.View;
 using KNX_Virtual_Integrator.ViewModel;
@@ -116,6 +117,9 @@ public partial class App
         var sliderClickHandler = new SliderClickHandler(logger, parentFinder);
         var analysis = new Analysis();
         var analyisExecutor = new AnalysisExecutor(groupCommunication, groupAddressManager, analysis);
+        var models = ModelDictionary.GetDefaultModels();
+        var addressModelLinker = new AddressModelLinker(groupAddressManager, models);
+        
 
         // Instancier ModelManager avec les dépendances
         ModelManager = new ModelManager(
@@ -134,7 +138,8 @@ public partial class App
             parentFinder,
             sliderClickHandler,
             analysis,
-            analyisExecutor);
+            analyisExecutor,
+            addressModelLinker);
         
         // Enregistrer un message de démarrage dans la console et le journal
         ModelManager.Logger.ConsoleAndLogWriteLine($"STARTING {AppName.ToUpper()} V{AppVersion.ToString("0.0", CultureInfo.InvariantCulture)} BUILD {AppBuild}...");

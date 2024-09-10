@@ -18,7 +18,8 @@ namespace KNX_Virtual_Integrator.Model
         IParentFinder parentFinder,
         ISliderClickHandler settingsSliderClickHandler,
         IAnalysis analysis,
-        IAnalysisExecutor analysisExecutor)
+        IAnalysisExecutor analysisExecutor,
+        IAddressModelLinker addressModelLinker)
 
     {
     public IFileLoader FileLoader { get; } = fileLoader;
@@ -39,5 +40,9 @@ namespace KNX_Virtual_Integrator.Model
     public IAnalysis Analysis { get; } = analysis;
 
     public IAnalysisExecutor AnalysisExecutor { get; } = analysisExecutor;
+
+    public IAddressModelLinker AddressModelLinker { get; } = addressModelLinker;
+
+
     }
 }

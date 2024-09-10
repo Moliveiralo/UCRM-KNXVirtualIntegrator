@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<GroupAddress-Export xmlns="http://knx.org/xml/ga-export/01">
+  <GroupRange Name="ECLAIRAGE SIMPLE" RangeStart="1" RangeEnd="2047">
+    <GroupRange Name="ON/OFF ECLAIRAGE SIMPLE" RangeStart="256" RangeEnd="511">
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="0/1/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_SalleDeBain" Address="0/1/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="0/1/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="0/1/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Grenier" Address="0/1/5" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Chambre" Address="0/1/6" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="0/1/7" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Exterieur" Address="0/1/8" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF ECLAIRAGE SIMPLE" RangeStart="512" RangeEnd="767">
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="0/2/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_SalleDeBain" Address="0/2/2" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="0/2/3" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="0/2/4" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Grenier" Address="0/2/5" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Chambre" Address="0/2/6" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="0/2/7" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Eclairage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Exterieur" Address="0/2/8" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="ECLAIRAGES VARIABLE" RangeStart="2048" RangeEnd="4095">
+    <GroupRange Name="ON/OFF ECL VARIABLE" RangeStart="2048" RangeEnd="2303">
+      <GroupAddress Name="Cmd_EclairagesVariable_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="1/0/1" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF ECL VARIABLE" RangeStart="2304" RangeEnd="2559">
+      <GroupAddress Name="Ie_EclairagesVariable_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="1/1/1" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="VARIATIONS" RangeStart="2560" RangeEnd="2815">
+      <GroupAddress Name="Ie_EclairagesVariable_Variations_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="1/2/1" DPTs="DPST-3-7" />
+    </GroupRange>
+    <GroupRange Name="VALEURS VARIATIONS" RangeStart="2816" RangeEnd="3071">
+      <GroupAddress Name="Cmd_EclairagesVariable_ValeursVariations_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="1/3/1" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="ETATS VARIATIONS" RangeStart="3072" RangeEnd="3327">
+      <GroupAddress Name="Cmd_EclairagesVariable_EtatsVariations_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="1/4/1" DPTs="DPST-5-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="VOLET ROULANT" RangeStart="4096" RangeEnd="6143">
+    <GroupRange Name="MONTEE/DESCENTE" RangeStart="4096" RangeEnd="4351">
+      <GroupAddress Name="Cmd_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="2/0/0" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="2/0/1" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Chambre" Address="2/0/2" DPTs="DPST-1-8" />
+      <GroupAddress Name="Cmd_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="2/0/3" DPTs="DPST-1-8" />
+    </GroupRange>
+    <GroupRange Name="ETATS MONTEE/DESCENTE" RangeStart="4352" RangeEnd="4607">
+      <GroupAddress Name="Ie_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="2/1/0" DPTs="DPST-1-10" />
+      <GroupAddress Name="Ie_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="2/1/1" DPTs="DPST-1-10" />
+      <GroupAddress Name="Ie_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Chambre" Address="2/1/2" DPTs="DPST-1-10" />
+      <GroupAddress Name="Ie_VoletRoulant_MonteeDescente_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="2/1/3" DPTs="DPST-1-10" />
+    </GroupRange>
+    <GroupRange Name="STOP" RangeStart="4608" RangeEnd="4863">
+      <GroupAddress Name="Cmd_VoletRoulant_Stop_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="2/2/0" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_VoletRoulant_Stop_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="2/2/1" DPTs="DPST-1-17" />
+      <GroupAddress Name="Cmd_VoletRoulant_Stop_MaqKnxC_MaisonDupre_RezDeChaussee_Chambre" Address="2/2/2" DPTs="DPST-1-7" />
+      <GroupAddress Name="Cmd_VoletRoulant_Stop_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="2/2/3" DPTs="DPST-1-7" />
+    </GroupRange>
+    <GroupRange Name="POSITION" RangeStart="4864" RangeEnd="5119">
+      <GroupAddress Name="Cmd_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/3/0" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/3/1" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/3/2" DPTs="DPST-5-1" />
+      <GroupAddress Name="Cmd_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/3/3" DPTs="DPST-5-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT POSITION" RangeStart="5120" RangeEnd="5375">
+      <GroupAddress Name="Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/4/0" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Couloir" Address="2/4/1" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/4/2" DPTs="DPST-5-1" />
+      <GroupAddress Name="Ie_VoletRoulant_EtatPosition_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt" Address="2/4/3" DPTs="DPST-5-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="CONVECTEUR" RangeStart="6144" RangeEnd="8191">
+    <GroupRange Name="ON/OFF CONVECTEUR" RangeStart="6144" RangeEnd="6399">
+      <GroupAddress Name="Cmd_Convecteur_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="3/0/0" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF CONVECTEUR" RangeStart="6400" RangeEnd="6655">
+      <GroupAddress Name="Ie_Convecteur_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="3/1/0" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="VALEUR" RangeStart="6656" RangeEnd="6911">
+      <GroupAddress Name="Ie_Convecteur_Valeur_MaqKnxC_MaisonDupre_RezDeChaussee_Salon" Address="3/2/0" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="PRISE" RangeStart="8192" RangeEnd="10239">
+    <GroupRange Name="ON/OFF PRISE" RangeStart="8192" RangeEnd="8447">
+      <GroupAddress Name="Cmd_Prise_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="4/0/0" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF PRISE" RangeStart="8448" RangeEnd="8703">
+      <GroupAddress Name="Ie_Prise_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Cuisine" Address="4/1/0" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="ARROSAGE" RangeStart="10240" RangeEnd="12287">
+    <GroupRange Name="ON/OFF ARROSAGE" RangeStart="10240" RangeEnd="10495">
+      <GroupAddress Name="Cmd_Arrosage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="5/0/0" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF ARROSAGE" RangeStart="10496" RangeEnd="10751">
+      <GroupAddress Name="Ie_Arrosage_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="5/1/0" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="OUVRANT" RangeStart="12288" RangeEnd="14335">
+    <GroupRange Name="ON/OFF OUVRANT" RangeStart="12288" RangeEnd="12543">
+      <GroupAddress Name="Cmd_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Gache" Address="6/0/0" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Portail" Address="6/0/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Cmd_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="6/0/2" DPTs="DPST-1-1" />
+    </GroupRange>
+    <GroupRange Name="ETAT ON/OFF OUVRANT" RangeStart="12544" RangeEnd="12799">
+      <GroupAddress Name="Ie_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Gache" Address="6/1/0" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Portail" Address="6/1/1" DPTs="DPST-1-1" />
+      <GroupAddress Name="Ie_Ouvrant_OnOff_MaqKnxC_MaisonDupre_RezDeChaussee_Garage" Address="6/1/2" DPTs="DPST-1-1" />
+    </GroupRange>
+  </GroupRange>
+</GroupAddress-Export>

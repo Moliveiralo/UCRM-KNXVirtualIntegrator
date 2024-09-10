@@ -8,7 +8,7 @@
         Title="TESTANALYSE" Height="450" Width="800"
         Background="LightGray">
     <Grid>
-        <TextBlock Text="Salut Daihi"
+        <TextBlock Text="Salut"
                    FontWeight="Bold"
                    HorizontalAlignment="Center" Margin="0,10,0,0"/>
         
