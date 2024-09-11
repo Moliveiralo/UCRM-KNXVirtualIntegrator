@@ -1,4 +1,7 @@
-﻿using System.Xml;
+﻿using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography;
+using System.Text;
+using System.Xml;
 using System.Xml.Linq;
 using KNX_Virtual_Integrator.Model.Interfaces;
 
@@ -223,7 +226,11 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
         var ieAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
         var cmdAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
         var addedCmdAddresses = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
-        
+
+        // Déclarez un HashSet pour suivre les clés des commandes déjà ajoutées
+        var addedCommandKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+
         foreach (var ga in groupAddresses)
         {
             var name = ga.Attribute("Name")?.Value;
@@ -267,6 +274,8 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
             }
         }
 
+        
+
         // Maintenant, pour chaque adresse "Cmd", on associe les adresses "Ie" correspondantes
         foreach (var cmdEntry in cmdAddresses)
         {
@@ -289,21 +298,81 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
                     {
                         addedCmdAddresses[suffix].Add(address); // Marquer cette combinaison comme ajoutée
 
-                        if (ieAddresses.ContainsKey(suffix))
+                        // Créez une clé unique pour cette commande
+                        var cmdKey = $"{suffix}_{address}_{dpts}";
+
+                        
+
+                        // Ajouter la commande si elle n'a pas encore été ajoutée
+                        if (!addedCommandKeys.Contains(cmdKey))
                         {
-                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
-                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
-                            // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
-                            foreach (var ieGa in ieAddresses[suffix])
+                            //poursavoir ou on en est
+                            int compte = 0;
+
+                            if (ieAddresses.ContainsKey(suffix))
                             {
-                                groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
+                                groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
+                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
+                                                               // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
+                                foreach (var ieGa in ieAddresses[suffix])
+                                {
+                                    groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
                                     $"{suffix}_{address}_{dpts}"); // Ajouter les adresses "Ie"
+                                    compte += 1;
+                                }
                             }
-                        }
-                        else
-                        {
-                            // Si aucune adresse "Ie" ne correspond, on ajoute uniquement l'adresse "Cmd"
-                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}_{dpts}");
+                            else
+                            {
+                                // Si on ne trouve pas, essayer avec un suffixe modifié
+                                var modifiedSuffix = GetModifiedSuffix(suffix);
+
+
+                                // Vérifier les adresses "Ie" en supprimant le texte entre le deuxième et le troisième tiret
+                                foreach (var ieEntry in ieAddresses)
+                                {
+                                    var ieKey = ieEntry.Key;
+                                    var ieList = ieEntry.Value;
+
+                                    foreach (var ie in ieList)
+                                    {
+                                        var ieName = ie.Attribute("Name")?.Value;
+                                        if (ieName != null)
+                                        {
+                                            var cleanedName = RemoveTextBetweenSecondAndThirdUnderscore(ieName);
+
+                                            if (cleanedName.Equals(modifiedSuffix, StringComparison.OrdinalIgnoreCase))
+                                            {
+                                                // Ajouter la commande si elle n'a pas encore été ajoutée
+                                                if (!addedCommandKeys.Contains(cmdKey))
+                                                {
+                                                    groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, cmdKey);
+                                                    addedCommandKeys.Add(cmdKey); // Ajouter la clé au HashSet
+                                                }
+                                                foreach (var ieGa in ieAddresses[ieKey])
+                                                {
+                                                    groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
+                                                        $"{suffix}_{address}_{dpts}"); // Ajouter les adresses "Ie"
+                                                    compte += 1;
+                                                }
+
+
+
+                                            }
+
+                                        }
+                                    }
+
+
+                                }
+
+                                // Si toujours rien, ajouter uniquement la commande "Cmd"
+                                if (compte == 0)
+                                {
+                                    groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}_{dpts}");
+                                }
+
+                            }
+                            
                         }
                     }
                 }
@@ -314,6 +383,37 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
         groupAddressMerger.GetElementsBySimilarity("_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt", _ieAddressesSet);
     }
     
+    // Méthode pour modifier le suffixe en retirant la partie après le deuxième underscore mais en gardant ce qui est entre le premier et le deuxième et après le troisième
+    private string GetModifiedSuffix(string suffix)
+    {
+        // Trouver le premier, le deuxième et le troisième underscores dans le suffixe
+        int firstUnderscoreIndex = suffix.IndexOf('_');
+        int secondUnderscoreIndex = suffix.IndexOf('_', firstUnderscoreIndex + 1);
+        int thirdUnderscoreIndex = suffix.IndexOf('_', secondUnderscoreIndex + 1);
+
+        if (firstUnderscoreIndex > -1 && secondUnderscoreIndex > -1 && thirdUnderscoreIndex > -1)
+        {
+            // Conserver la partie entre le premier et le deuxième underscore et après le troisième
+            return suffix.Substring(0, secondUnderscoreIndex + 1) + suffix.Substring(thirdUnderscoreIndex);
+        }
+
+        return suffix; // Si pas assez d'underscores, retourner tel quel
+    }
+
+    // Méthode pour enlever le texte entre le deuxième et le troisième tiret "_"
+    private string RemoveTextBetweenSecondAndThirdUnderscore(string name)
+    {
+        var parts = name.Split('_');
+        if (parts.Length > 3)
+        {
+            return $"_{parts[1]}__{parts[3]}_{string.Join("_", parts.Skip(4))}";
+        }
+        return name;
+    }
+
+    
+
+
     /// <summary>
     /// Determines the level structure of group addresses in an XML document to check for overlaps.
     /// 

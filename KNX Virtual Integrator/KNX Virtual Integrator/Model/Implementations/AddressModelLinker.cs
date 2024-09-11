@@ -31,8 +31,8 @@ namespace KNX_Virtual_Integrator.Model.Implementations
 
             foreach (var entry in _groupedAddresses)
             {
-                var commonName = entry.Key;
-                var infos = entry.Value;
+                var commonName = entry.Key; //prendre le nom de l'adr
+                var infos = entry.Value; //prendre la valeur de adr = nom/ @/ dpt...
 
                 var cmdAddressElement = infos.FirstOrDefault(a => a.Attribute("Name")?.Value.StartsWith("Cmd", StringComparison.OrdinalIgnoreCase) == true); //identifier ou est l'@ cmd
                 var ieAddressElements = infos.Where(a => a.Attribute("Name")?.Value.StartsWith("Ie", StringComparison.OrdinalIgnoreCase) == true).ToList(); //identifier ou sont les @ ie
@@ -54,26 +54,30 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                             var subtypeNumber = int.Parse(dptParts[2]);
 
                             // Vérification type
-                            if (_models.TryGetValue(mainTypeNumber, out var model))
+                            //if (_models.TryGetValue(mainTypeNumber, out var model))
+                            foreach (var model in _models.Values)
                             {
-                                // Vérification sous-type
-                                if (model.SubDPT.SubTypeNumber == subtypeNumber) //pas sur de moi
+                                // Vérification du type principal avec la valeur DPT du modèle
+                                if (model.DptValue.MainTypeNumber == mainTypeNumber)
                                 {
-                                    var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
-                                    var key = $"{commonName}_{cmdAddress}";
+                                    // Vérification sous-type
+                                    if (model.SubDPT.SubTypeNumber == subtypeNumber) //pas sur de moi
+                                    {
+                                        var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
+                                        var key = $"{commonName}_{cmdAddress}";
 
-                                    /*if (ieAddress == null) {
-                                        informationsglob[key] = (
-                                        CmdAddress: cmdAddress,
-                                        IeAddress: new GroupAddress("0/0/0"),
-                                        Dpt: model.DptValue,
-                                        SubDpt: model.SubDPT,
-                                        SizeInBit: model.SizeInBit,
-                                        Ve: model.Ve,
-                                        Va: model.Va
-                                    );
-                                    }
-                                    else {*/
+                                        if (ieAddress == null) {
+                                            informationsglob[key] = (
+                                            CmdAddress: cmdAddress,
+                                            IeAddress: new GroupAddress("0/0/0"),
+                                            Dpt: model.DptValue,
+                                            SubDpt: model.SubDPT,
+                                            SizeInBit: model.SizeInBit,
+                                            Ve: model.Ve,
+                                            Va: model.Va
+                                        );
+                                        }
+                                        else {
                                         informationsglob[key] = (
                                         CmdAddress: cmdAddress,
                                         IeAddress: ieAddress,
@@ -83,9 +87,13 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                                         Ve: model.Ve,
                                         Va: model.Va
                                     );
-                                    //}
-                                    
+                                        }
+
+                                    }
+
+
                                 }
+                                    
                             }
                         }
 
