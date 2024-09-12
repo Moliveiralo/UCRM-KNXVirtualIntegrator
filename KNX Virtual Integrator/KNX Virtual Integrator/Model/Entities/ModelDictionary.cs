@@ -49,22 +49,26 @@ namespace KNX_Virtual_Integrator.Model.Entities
             return new Dictionary<int, FunctionalModel>
             {
                 { 1, new FunctionalModel(
-                        dptTypeo,               // Initialisation avec le DPT récupéré
+                        dptTyped,               // Initialisation avec le DPT récupéré
                         "Modèle ON/OFF",
-                        dptSubtypeo,            // Initialisation avec le SubDPT récupéré
+                        dptSubtyped,            // Initialisation avec le SubDPT récupéré
                         1,                     // 1bit
-                        new GroupValue(true),                   //envoi 1 ON
-                        new GroupValue(true))                   //lecture 1 ON
-                },
+                        new GroupValue[] {
+                            new GroupValue(true),  // Envoi 1 ON
+                            new GroupValue(false)}, // Envoi 1 OFF
+                        new GroupValue[] {
+                            new GroupValue(true),  // Lecture 1 ON
+                            new GroupValue(false)} // Lecture 1 OFF
+                )/*,
 
                 { 2, new FunctionalModel(
                         dptTyped,               // Initialisation avec le DPT récupéré
                         "Modèle ON/OFF",
                         dptSubtyped,            // Initialisation avec le SubDPT récupéré
                         1,                     // 1bit
-                        new GroupValue(true),                   //envoi 1 ON
-                        new GroupValue(true))                   //lecture 1 ON
-                }
+                        new GroupValue(true),                   
+                        new GroupValue(true))                   
+                */}
             };
         }
     }

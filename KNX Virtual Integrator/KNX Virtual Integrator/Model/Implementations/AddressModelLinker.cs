@@ -35,6 +35,7 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                 var infos = entry.Value; //prendre la valeur de adr = nom/ @/ dpt...
 
                 var cmdAddressElement = infos.FirstOrDefault(a => a.Attribute("Name")?.Value.StartsWith("Cmd", StringComparison.OrdinalIgnoreCase) == true); //identifier ou est l'@ cmd
+                //faut la changer cette ligne = ca doit etre un tableau d'ie
                 var ieAddressElements = infos.Where(a => a.Attribute("Name")?.Value.StartsWith("Ie", StringComparison.OrdinalIgnoreCase) == true).ToList(); //identifier ou sont les @ ie
 
                 if (cmdAddressElement != null /*&& ieAddressElements != null*/)
@@ -63,32 +64,42 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                                     // Vérification sous-type
                                     if (model.SubDPT.SubTypeNumber == subtypeNumber) //pas sur de moi
                                     {
-                                        var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
-                                        var key = $"{commonName}_{cmdAddress}";
+                                        // Pour chaque adresse 'Ie'
+                                        foreach (var ieElement in ieAddressElements)
+                                        {
+                                            var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
+                                            
+                                            // Pour chaque index des tableaux 'Ve' et 'Va'
+                                            for (int i = 0; i < model.Ve.Length; i++)
+                                            {
+                                                var key = $"{commonName}_CmdAdr{cmdAddress}_IeAdr{ieAddress}_nbrIe{i}_nbrVe{i}";
 
-                                        if (ieAddress == null) {
-                                            informationsglob[key] = (
-                                            CmdAddress: cmdAddress,
-                                            IeAddress: new GroupAddress("0/0/0"),
-                                            Dpt: model.DptValue,
-                                            SubDpt: model.SubDPT,
-                                            SizeInBit: model.SizeInBit,
-                                            Ve: model.Ve,
-                                            Va: model.Va
-                                        );
+                                                if (ieAddress == null)
+                                                {
+                                                    informationsglob[key] = (
+                                                    CmdAddress: cmdAddress,
+                                                    IeAddress: new GroupAddress("0/0/0"),
+                                                    Dpt: model.DptValue,
+                                                    SubDpt: model.SubDPT,
+                                                    SizeInBit: model.SizeInBit,
+                                                    Ve: model.Ve[i], 
+                                                    Va: model.Va[i]  
+                                                );
+                                                }
+                                                else
+                                                {
+                                                    informationsglob[key] = (
+                                                    CmdAddress: cmdAddress,
+                                                    IeAddress: ieAddress,
+                                                    Dpt: model.DptValue,
+                                                    SubDpt: model.SubDPT,
+                                                    SizeInBit: model.SizeInBit,
+                                                    Ve: model.Ve[i],
+                                                    Va: model.Va[i]
+                                                );
+                                                }
+                                            }
                                         }
-                                        else {
-                                        informationsglob[key] = (
-                                        CmdAddress: cmdAddress,
-                                        IeAddress: ieAddress,
-                                        Dpt: model.DptValue,
-                                        SubDpt: model.SubDPT,
-                                        SizeInBit: model.SizeInBit,
-                                        Ve: model.Ve,
-                                        Va: model.Va
-                                    );
-                                        }
-
                                     }
 
 
@@ -128,6 +139,7 @@ namespace KNX_Virtual_Integrator.Model.Implementations
 
                 // Ajouter les détails du modèle
                 result.Add($"Modèle ID: {modelId}");
+                result.Add($"Nom: {model.Name}");
                 result.Add($"DPT: {model.DptValue}");
                 result.Add($"SubDPT: {model.SubDPT}");
                 result.Add($"SizeInBit: {model.SizeInBit}");

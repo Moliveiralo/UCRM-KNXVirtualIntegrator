@@ -32,11 +32,11 @@ public class FunctionalModel : IEquatable<FunctionalModel>
     // Nouvelles propriétés pour modele par defaut
     public DatapointSubtype SubDPT { get; set; }      // Sous-type du DPT
     public int SizeInBit { get; set; }   // Taille en bits
-    public GroupValue Ve { get; set; }          // Valeur d'entrée
-    public GroupValue Va { get; set; }          // Valeur attendue
+    public GroupValue[] Ve { get; set; } // Tableau pour valeurs d'entrée
+    public GroupValue[] Va { get; set; } // Tableau pour valeurs attendues
 
     //Constructeur
-    public FunctionalModel(DatapointType value, string name, DatapointSubtype subDpt, int sizeInBit, GroupValue ve, GroupValue va) //attention a changer le type
+    public FunctionalModel(DatapointType value, string name, DatapointSubtype subDpt, int sizeInBit, GroupValue[] ve, GroupValue[] va) //attention a changer le type
     {
         //dpt_value = value;
         DptValue = value;
