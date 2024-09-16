@@ -1,0 +1,444 @@
+
+    <Grid>
+        <!-- Define rows and columns for the grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Import Button -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Bus Connection -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Discovered Interface -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Group Address List -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Modeles -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row for Test Buttons -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Import Button -->
+        <Button Name="ImportButton" Content="Importer" 
+                Grid.Row="0" Grid.Column="0" Margin="5" 
+                Command="{Binding ImportCommand}"/>
+
+        <!-- Bus Connection Section -->
+        <GroupBox Header="Bus Connection" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10">
+            <StackPanel>
+                <!-- ComboBox for selecting the type of connection -->
+                <ComboBox Name="ConnectionTypeComboBox" SelectedIndex="0" SelectedItem="{Binding SelectedConnectionType}">
+                    <ComboBoxItem Content="Type=USB"/>
+                    <ComboBoxItem Content="Type=IP"/>
+                    <!-- Add more connection types here -->
+                    
+                </ComboBox>
+                
+                
+                <GroupBox Header="Discovered Interfaces">
+                    <!-- Discovered Interface Section -->
+                    <StackPanel>
+                        <!-- Liste des interfaces découvertes -->
+                        <ListBox Name="InterfaceListBox" 
+                                 ItemsSource="{Binding DiscoveredInterfaces}"
+                                 SelectedItem="{Binding SelectedInterface}"
+                                 Width="700" Height="50" 
+                                 Margin="0,10,0,0"
+                                 SelectionMode="Single">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding DisplayName}" />
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                        <!-- Bouton pour rafraîchir la liste des interfaces -->
+                        <Button Content="Refresh Interfaces" Width="700" 
+                                Background="Yellow" Foreground="DeepPink"
+                                BorderThickness="3" BorderBrush="Aqua" 
+                                Command="{Binding RefreshInterfacesCommand}" Margin="5"/>
+                    </StackPanel>
+                </GroupBox>
+                <!-- Buttons for connecting and disconnecting -->
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Button Name="ConnectButton" Content="Connect" Margin="5" Padding="5,2" Command="{Binding ConnectCommand}"/>
+                    <Button Name="DisconnectButton" Content="Disconnect" Margin="5" Padding="5,2" Command="{Binding DisconnectCommand}"/>
+                    <TextBlock Name="ConnectionStateTextBlock" 
+                               Text="{Binding ConnectionState}" 
+                               Foreground="Red" 
+                               Margin="5,7,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        
+
+        <!-- Group Address List Section -->
+        <GroupBox Header="Liste des adresses de groupes non gérées" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Vertical"><!-- Instance of GroupAddressList UserControl -->
+                <ListBox Name="GroupAddressListBox" 
+                         ItemsSource="{Binding GroupAddresses}"
+                         Width="700" Height="10" 
+                         Margin="0,10,0,0">
+                </ListBox>
+            </StackPanel>
+        </GroupBox>
+            
+        <!-- Modeles Section -->
+        <GroupBox Header="Modèles" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                        <Label Grid.Row="0" Grid.Column="0" Content="Group Address:"  Margin="4" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding GroupCommunicationVM.GroupAddress, Converter={StaticResource GroupAddressConverter}}" MinWidth="100" Margin="4" VerticalAlignment="Center" />
+                    <Button Grid.Row="0" Grid.Column="2" Content="Read" Command="{Binding GroupCommunicationVM.ReadCommand}" MinWidth="120" Margin="4" VerticalAlignment="Center"/>
+                    
+                        <Label Grid.Row="1" Grid.Column="0" Content="Value:"  Margin="4" VerticalAlignment="Center" />
+                        <TextBox Grid.Column="0" Text="{Binding GroupCommunicationVM.GroupValue.Value, Converter={StaticResource GroupValueConverter}}" MinWidth="100" Margin="4" VerticalAlignment="Center" />
+                        <Button Grid.Row="1" Grid.Column="2" Content="Write" Command="{Binding GroupCommunicationVM.GroupValueWriteCommand}" MinWidth="120" Margin="4" VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Test d'envoi allumer" 
+                        Command="{Binding GroupCommunicationVM.GroupValueWriteONCommand}"
+                        Margin="10" Click="Button_Click"/>
+                    <Button Content="Test d'envoi éteindre" 
+                        Command="{Binding GroupCommunicationVM.GroupValueWrite0FFCommand}"
+                        Margin="10"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Envoyer Trames" Command="{Binding  GroupCommunicationVM.SendGroupValuesCommand}" CommandParameter="{Binding  GroupCommunicationVM.GroupValues}" />
+                </StackPanel>
+
+                <Grid>
+                    <DataGrid  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="4" Height="120" 
+                                      ItemsSource="{Binding GroupCommunicationVM.Messages}" IsSynchronizedWithCurrentItem="True"
+                                      AutoGenerateColumns="False" IsReadOnly="True" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header ="EventType" Binding="{Binding EventType}" />
+                            <DataGridTextColumn Header ="SourceAddress" Binding="{Binding SourceAddress}" />
+                            <DataGridTextColumn Header ="DestinationAddress" Binding="{Binding DestinationAddress}" />
+                            <DataGridTextColumn Header ="Value" Binding="{Binding Value}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Lire toutes les adresses" Command="{Binding  GroupCommunicationVM.ReadGroupAddressCommand}" CommandParameter="{Binding  GroupCommunicationVM.ListGroupAddr}" />
+                </StackPanel>
+
+
+                <!--<Grid>
+                    <ListView ItemsSource="{Binding GroupCommunicationVM.GroupValues}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Group Address" Width="150" DisplayMemberBinding="{Binding addr}" />
+                                <GridViewColumn Header="Group Value" Width="150" DisplayMemberBinding="{Binding value}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <Button Content="Lire les valeurs" Command="{Binding GroupCommunicationVM.GroupValueReadCommand}" 
+                            CommandParameter="{Binding  GroupCommunicationVM.GroupValues}"
+                            VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120" Margin="10"/>
+                </Grid>-->
+
+            </StackPanel>
+        </GroupBox>
+
+
+
+        <!-- Test Buttons Section -->
+        <GroupBox Header="Tester les modèles" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="TestSelectedModelesButton" Content="Tester les modèles sélectionnés" Margin="5"/>
+                <Button Name="TestAllModelesButton" Content="Tout tester" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LE    TRUC    DEMMA MAIS   MA VERSION
+
+public void ProcessStandardXmlFile(XDocument groupAddressFile)
+{
+    _ieAddressesSet.Clear();
+    _groupedAddresses.Clear();
+    var groupAddresses = groupAddressFile.Descendants(GlobalKnxNamespace + "GroupAddress").ToList();
+
+    var ieAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
+    var cmdAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
+    var addedCmdAddresses = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
+    
+    foreach (var ga in groupAddresses)
+    {
+        var name = ga.Attribute("Name")?.Value;
+        var address = ga.Attribute("Address")?.Value;
+        //DPTs
+        //var dpts = ga.Attribute("DPTs")?.Value;
+
+
+        if (name != null && address != null)
+        {
+            //DPTs
+            /*if (dpts != null)
+            {
+                ga.SetAttributeValue("DPTs", dpts);
+            }*/
+
+            if (name.StartsWith("Ie", StringComparison.OrdinalIgnoreCase))
+            {
+                var suffix = name.Substring(2);
+                // Vérifier si l'adresse est déjà présente dans la liste ieAddressesSet
+                if (!_ieAddressesSet.Any(x => x.Attribute("Address")?.Value == address))
+                {
+                    _ieAddressesSet.Add(ga);
+
+                    if (!ieAddresses.ContainsKey(suffix))
+                    {
+                        ieAddresses[suffix] = new List<XElement>();
+                    }
+                    ieAddresses[suffix].Add(ga);
+                }
+            }
+            else if (name.StartsWith("Cmd", StringComparison.OrdinalIgnoreCase))
+            {
+                var suffix = name.Substring(3);
+                if (!cmdAddresses.ContainsKey(suffix))
+                {
+                    cmdAddresses[suffix] = new List<XElement>();
+                }
+                cmdAddresses[suffix].Add(ga);
+            }
+        }
+    }
+
+    // Maintenant, pour chaque adresse "Cmd", on associe les adresses "Ie" correspondantes
+    foreach (var cmdEntry in cmdAddresses)
+    {
+        var suffix = cmdEntry.Key;
+
+        // Trouver la position du premier et du deuxième underscore
+        int firstUnderscoreIndexc = suffix.IndexOf('_', 1); // Ignorer le premier _
+        int secondUnderscoreIndexc = suffix.IndexOf('_', firstUnderscoreIndexc + 1);
+
+        // Créer la nouvelle chaîne en combinant la première partie et la suite après le deuxième membre
+        var suffixsans = suffix.Substring(0, firstUnderscoreIndexc + 1)
+                           + suffix.Substring(secondUnderscoreIndexc);
+
+        var cmds = cmdEntry.Value;
+
+        foreach (var cmd in cmds)
+        {
+            var address = cmd.Attribute("Address")?.Value;
+            var dpts = cmd.Attribute("DPTs")?.Value;
+            if (address != null)
+            {
+                if (!addedCmdAddresses.ContainsKey(suffix))
+                {
+                    addedCmdAddresses[suffix] = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                }
+
+                // Vérifier si la combinaison suffixe/adresse a déjà été ajoutée
+                if (!addedCmdAddresses[suffix].Contains(address))
+                {
+                    addedCmdAddresses[suffix].Add(address); // Marquer cette combinaison comme ajoutée
+
+                    foreach (var ieEntry in ieAddresses)
+                    {
+                        var suffixie = ieEntry.Key;
+
+                        
+
+
+
+                        if (suffixie == suffix)    /////pour regler le probleme il faut rajouter la condition avec etat dans le suffix!!!!
+                        {
+                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
+                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
+                                                               // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
+                            foreach (var ieGa in ieAddresses[suffixie])
+                            {
+                                groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
+                                    $"{suffixie}_{address}_{dpts}"); // Ajouter les adresses "Ie"
+                            }
+                        }
+
+                        else
+                        {
+                            // Trouver la position du premier et du deuxième underscore
+                            int firstUnderscoreIndex = suffixie.IndexOf('_', 1); // Ignorer le premier _
+                            int secondUnderscoreIndex = suffixie.IndexOf('_', firstUnderscoreIndex + 1);
+
+                            // Créer la nouvelle chaîne en combinant la première partie et la suite après le deuxième membre
+                            var suffixiesans = suffixie.Substring(0, firstUnderscoreIndex + 1)
+                                               + suffixie.Substring(secondUnderscoreIndex);
+
+                            if (suffixiesans == suffixsans)
+                            {
+                                groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
+                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
+                                                               // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
+                                foreach (var ieGa in ieAddresses[suffixie])
+                                {
+                                    groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
+                                        $"{suffixie}_{address}_{dpts}"); // Ajouter les adresses "Ie"
+                                }
+                            }
+                            /*else
+                            { // Si aucune adresse "Ie" ne correspond, on ajoute uniquement l'adresse "Cmd"
+                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}_{dpts}");
+                            }*/
+
+                        }
+                    }
+
+                   
+                }
+            }
+        }
+    }
+
+    groupAddressMerger.MergeSingleElementGroups(_groupedAddresses, _ieAddressesSet);
+    groupAddressMerger.GetElementsBySimilarity("_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt", _ieAddressesSet);
+}
+
+
+
+
+
+
+
+LA VERSION DEMMMA
+
+public void ProcessStandardXmlFile(XDocument groupAddressFile)
+{
+    _ieAddressesSet.Clear();
+    _groupedAddresses.Clear();
+    var groupAddresses = groupAddressFile.Descendants(GlobalKnxNamespace + "GroupAddress").ToList();
+
+    var ieAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
+    var cmdAddresses = new Dictionary<string, List<XElement>>(StringComparer.OrdinalIgnoreCase);
+    var addedCmdAddresses = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
+    
+    foreach (var ga in groupAddresses)
+    {
+        var name = ga.Attribute("Name")?.Value;
+        var address = ga.Attribute("Address")?.Value;
+        //DPTs
+        //var dpts = ga.Attribute("DPTs")?.Value;
+
+
+        if (name != null && address != null)
+        {
+            //DPTs
+            /*if (dpts != null)
+            {
+                ga.SetAttributeValue("DPTs", dpts);
+            }*/
+
+            if (name.StartsWith("Ie", StringComparison.OrdinalIgnoreCase))
+            {
+                var suffix = name.Substring(2);
+                // Vérifier si l'adresse est déjà présente dans la liste ieAddressesSet
+                if (!_ieAddressesSet.Any(x => x.Attribute("Address")?.Value == address))
+                {
+                    _ieAddressesSet.Add(ga);
+
+                    if (!ieAddresses.ContainsKey(suffix))
+                    {
+                        ieAddresses[suffix] = new List<XElement>();
+                    }
+                    ieAddresses[suffix].Add(ga);
+                }
+            }
+            else if (name.StartsWith("Cmd", StringComparison.OrdinalIgnoreCase))
+            {
+                var suffix = name.Substring(3);
+                if (!cmdAddresses.ContainsKey(suffix))
+                {
+                    cmdAddresses[suffix] = new List<XElement>();
+                }
+                cmdAddresses[suffix].Add(ga);
+            }
+        }
+    }
+
+    // Maintenant, pour chaque adresse "Cmd", on associe les adresses "Ie" correspondantes
+    foreach (var cmdEntry in cmdAddresses)
+    {
+        var suffix = cmdEntry.Key;
+        var cmds = cmdEntry.Value;
+
+        foreach (var cmd in cmds)
+        {
+            var address = cmd.Attribute("Address")?.Value;
+            var dpts = cmd.Attribute("DPTs")?.Value;
+            if (address != null)
+            {
+                if (!addedCmdAddresses.ContainsKey(suffix))
+                {
+                    addedCmdAddresses[suffix] = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                }
+
+                // Vérifier si la combinaison suffixe/adresse a déjà été ajoutée
+                if (!addedCmdAddresses[suffix].Contains(address))
+                {
+                    addedCmdAddresses[suffix].Add(address); // Marquer cette combinaison comme ajoutée
+
+                    if (ieAddresses.ContainsKey(suffix))
+                        {
+                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd,
+                                $"{suffix}_{address}_{dpts}"); // Ajouter l'adresse "Cmd"
+                                                               // Si des adresses "Ie" avec le même suffixe existent, on les associe à l'adresse "Cmd"
+                        foreach (var ieGa in ieAddresses[suffix])
+                            {
+                                groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, ieGa,
+                                $"{suffix}_{address}_{dpts}"); // Ajouter les adresses "Ie"
+                            }
+                        }
+                        else
+                        {
+                        // Si aucune adresse "Ie" ne correspond, on ajoute uniquement l'adresse "Cmd"
+                            groupAddressProcessor.AddToGroupedAddresses(_groupedAddresses, cmd, $"{suffix}_{address}_{dpts}");
+                    }
+                }
+            }
+        }
+    }
+
+    groupAddressMerger.MergeSingleElementGroups(_groupedAddresses, _ieAddressesSet);
+    groupAddressMerger.GetElementsBySimilarity("_VoletRoulant_Position_MaqKnxC_MaisonDupre_RezDeChaussee_Tgbt", _ieAddressesSet);
+}
+

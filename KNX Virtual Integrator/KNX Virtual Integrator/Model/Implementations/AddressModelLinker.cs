@@ -67,8 +67,8 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                                         // Pour chaque adresse 'Ie'
                                         foreach (var ieElement in ieAddressElements)
                                         {
-                                            var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
-                                            
+                                            //var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
+                                            var ieAddress = ieElement?.Attribute("Address")?.Value;
                                             // Pour chaque index des tableaux 'Ve' et 'Va'
                                             for (int i = 0; i < model.Ve.Length; i++)
                                             {

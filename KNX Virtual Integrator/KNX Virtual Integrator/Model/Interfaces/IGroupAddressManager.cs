@@ -54,4 +54,9 @@ public interface IGroupAddressManager
     /// </summary>
     public int DetermineGroupAddressStructure(XDocument doc);
 
+
+    public string RemoveTextBetweenSecondAndThirdUnderscore(string name);
+    public string GetModifiedSuffix(string suffix);
+
+
 }
