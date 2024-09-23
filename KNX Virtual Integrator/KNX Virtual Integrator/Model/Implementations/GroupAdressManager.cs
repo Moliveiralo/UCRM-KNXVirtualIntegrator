@@ -384,7 +384,7 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
     }
     
     // Méthode pour modifier le suffixe en retirant la partie après le deuxième underscore mais en gardant ce qui est entre le premier et le deuxième et après le troisième
-    private string GetModifiedSuffix(string suffix)
+    public string GetModifiedSuffix(string suffix)
     {
         // Trouver le premier, le deuxième et le troisième underscores dans le suffixe
         int firstUnderscoreIndex = suffix.IndexOf('_');
@@ -401,7 +401,7 @@ public class GroupAddressManager(Logger logger, ProjectFileManager projectFileMa
     }
 
     // Méthode pour enlever le texte entre le deuxième et le troisième tiret "_"
-    private string RemoveTextBetweenSecondAndThirdUnderscore(string name)
+    public string RemoveTextBetweenSecondAndThirdUnderscore(string name)
     {
         var parts = name.Split('_');
         if (parts.Length > 3)

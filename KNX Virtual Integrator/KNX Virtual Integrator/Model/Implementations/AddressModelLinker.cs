@@ -35,7 +35,7 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                 var infos = entry.Value; //prendre la valeur de adr = nom/ @/ dpt...
 
                 var cmdAddressElement = infos.FirstOrDefault(a => a.Attribute("Name")?.Value.StartsWith("Cmd", StringComparison.OrdinalIgnoreCase) == true); //identifier ou est l'@ cmd
-                //faut la changer cette ligne = ca doit etre un tableau d'ie
+                
                 var ieAddressElements = infos.Where(a => a.Attribute("Name")?.Value.StartsWith("Ie", StringComparison.OrdinalIgnoreCase) == true).ToList(); //identifier ou sont les @ ie
 
                 if (cmdAddressElement != null /*&& ieAddressElements != null*/)
@@ -67,7 +67,7 @@ namespace KNX_Virtual_Integrator.Model.Implementations
                                         // Pour chaque adresse 'Ie'
                                         foreach (var ieElement in ieAddressElements)
                                         {
-                                            //var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
+                                            // //faut la changer cette ligne = ca doit etre un tableau d'ie var ieAddress = ieAddressElements.FirstOrDefault()?.Attribute("Address")?.Value;
                                             var ieAddress = ieElement?.Attribute("Address")?.Value;
                                             // Pour chaque index des tableaux 'Ve' et 'Va'
                                             for (int i = 0; i < model.Ve.Length; i++)
